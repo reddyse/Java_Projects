@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Assignment5_Project">
+  <ClassDiagramComponents>
+    <Class name="City" package="business" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="cityName" type="String" visibility="private"/>
+        <Field name="gov" type="Government" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="CityDirectory" package="business" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="cityDirectory" type="ArrayList&lt;City&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getCityDirectory" returnType="ArrayList&lt;City&gt;" visibility="public"/>
+        <Method name="setCityDirectory" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;City&gt;" name="cityDirectory"/>
+        </Method>
+        <Method name="addCity" returnType="City" visibility="public">
+          <Argument type="City" name="city"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Community" package="business" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="houseDirectory" type="HouseDirectory" visibility="private"/>
+        <Field name="communityID" type="String" visibility="private"/>
+        <Field name="communityName" type="String" visibility="private"/>
+        <Field name="communityLocation" type="String" visibility="private"/>
+        <Field name="communityCleanlinessScore" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getHouseDirectory" returnType="HouseDirectory" visibility="public"/>
+        <Method name="getCommunityName" returnType="String" visibility="public"/>
+        <Method name="setCommunityName" returnType="void" visibility="public">
+          <Argument type="String" name="communityName"/>
+        </Method>
+        <Method name="getCommunityLocation" returnType="String" visibility="public"/>
+        <Method name="setCommunityLocation" returnType="void" visibility="public">
+          <Argument type="String" name="communityLocation"/>
+        </Method>
+        <Method name="getCommunityCleanlinessScore" returnType="double" visibility="public"/>
+        <Method name="setCommunityCleanlinessScore" returnType="void" visibility="public">
+          <Argument type="double" name="communityCleanlinessScore"/>
+        </Method>
+        <Method name="getCommunityID" returnType="String" visibility="public"/>
+        <Method name="setCommunityID" returnType="void" visibility="public">
+          <Argument type="String" name="communityID"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="CommunityDirectory" package="business" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="communityDirectory" type="ArrayList&lt;Community&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getCommunityDirectory" returnType="ArrayList&lt;Community&gt;" visibility="public"/>
+        <Method name="setCommunityDirectory" returnType="void" visibility="public"/>
+        <Method name="addCommunity" returnType="Community" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Family" package="business" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="patientlist" type="ArrayList&lt;Patient&gt;" visibility="private"/>
+        <Field name="familyID" type="String" visibility="private"/>
+        <Field name="lastName" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getPatientlist" returnType="ArrayList&lt;Patient&gt;" visibility="public"/>
+        <Method name="setFamilylist" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Patient&gt;" name="patientlist"/>
+        </Method>
+        <Method name="getLastName" returnType="String" visibility="public"/>
+        <Method name="setLastName" returnType="void" visibility="public">
+          <Argument type="String" name="lastName"/>
+        </Method>
+        <Method name="getFamilyID" returnType="String" visibility="public"/>
+        <Method name="setFamilyID" returnType="void" visibility="public">
+          <Argument type="String" name="familyID"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FamilyDirectory" package="business" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="familyList" type="ArrayList&lt;Family&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getFamilyList" returnType="ArrayList&lt;Family&gt;" visibility="public"/>
+        <Method name="setFamilyList" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Family&gt;" name="familyList"/>
+        </Method>
+        <Method name="addFamily" returnType="Family" visibility="public">
+          <Argument type="HouseDirectory" name="hd"/>
+          <Argument type="House" name="h"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Government" package="business" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="mayor" type="String" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="House" package="business" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields>
+        <Field name="houseAddress" type="String" visibility="private"/>
+        <Field name="houseNumber" type="String" visibility="private"/>
+        <Field name="houseID" type="String" visibility="private"/>
+        <Field name="familyList" type="ArrayList&lt;Family&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getFamilyList" returnType="ArrayList&lt;Family&gt;" visibility="public"/>
+        <Method name="setFamilyList" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Family&gt;" name="familyList"/>
+        </Method>
+        <Method name="getHouseAddress" returnType="String" visibility="public"/>
+        <Method name="setHouseAddress" returnType="void" visibility="public">
+          <Argument type="String" name="houseAddress"/>
+        </Method>
+        <Method name="getHouseNumber" returnType="String" visibility="public"/>
+        <Method name="setHouseNumber" returnType="void" visibility="public">
+          <Argument type="String" name="houseNumber"/>
+        </Method>
+        <Method name="getHouseID" returnType="String" visibility="public"/>
+        <Method name="setHouseID" returnType="void" visibility="public">
+          <Argument type="String" name="houseID"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="HouseDirectory" package="business" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields>
+        <Field name="houseList" type="ArrayList&lt;House&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="gethouseList" returnType="ArrayList&lt;House&gt;" visibility="public"/>
+        <Method name="sethouseist" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;House&gt;" name="houseList"/>
+        </Method>
+        <Method name="addHouse" returnType="House" visibility="public">
+          <Argument type="CommunityDirectory" name="cd"/>
+          <Argument type="Community" name="com"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Patient" package="business" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields>
+        <Field name="MRN" type="int" visibility="private"/>
+        <Field name="isSmoker" type="boolean" visibility="private"/>
+        <Field name="isInsured" type="boolean" visibility="private"/>
+        <Field name="isDiabetic" type="boolean" visibility="private"/>
+        <Field name="vitalSign" type="ArrayList&lt;VitalSigns&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getVitalSign" returnType="ArrayList&lt;VitalSigns&gt;" visibility="public"/>
+        <Method name="setVitalSign" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;VitalSigns&gt;" name="vitalSign"/>
+        </Method>
+        <Method name="getMRN" returnType="int" visibility="public"/>
+        <Method name="setMRN" returnType="void" visibility="public">
+          <Argument type="int" name="MRN"/>
+        </Method>
+        <Method name="isIsSmoker" returnType="boolean" visibility="public"/>
+        <Method name="setIsSmoker" returnType="void" visibility="public">
+          <Argument type="boolean" name="isSmoker"/>
+        </Method>
+        <Method name="isIsInsured" returnType="boolean" visibility="public"/>
+        <Method name="setIsInsured" returnType="void" visibility="public">
+          <Argument type="boolean" name="isInsured"/>
+        </Method>
+        <Method name="isIsDiabetic" returnType="boolean" visibility="public"/>
+        <Method name="setIsDiabetic" returnType="void" visibility="public">
+          <Argument type="boolean" name="isDiabetic"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PatientDirectory" package="business" visibility="public" xPosition="620.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="addPatient" returnType="Patient" visibility="public">
+          <Argument type="FamilyDirectory" name="fd"/>
+          <Argument type="Family" name="fam"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Person" package="business" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Fields>
+        <Field name="fname" type="String" visibility="private"/>
+        <Field name="lastName" type="String" visibility="private"/>
+        <Field name="mobNumber" type="String" visibility="private"/>
+        <Field name="gender" type="String" visibility="private"/>
+        <Field name="socialNumber" type="int" visibility="private"/>
+        <Field name="income" type="double" visibility="private"/>
+        <Field name="age" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getFname" returnType="String" visibility="public"/>
+        <Method name="setFname" returnType="void" visibility="public">
+          <Argument type="String" name="fname"/>
+        </Method>
+        <Method name="getMobNumber" returnType="String" visibility="public"/>
+        <Method name="setMobNumber" returnType="void" visibility="public">
+          <Argument type="String" name="mobNumber"/>
+        </Method>
+        <Method name="getIncome" returnType="double" visibility="public"/>
+        <Method name="setIncome" returnType="void" visibility="public">
+          <Argument type="double" name="income"/>
+        </Method>
+        <Method name="getAge" returnType="int" visibility="public"/>
+        <Method name="setAge" returnType="void" visibility="public">
+          <Argument type="int" name="age"/>
+        </Method>
+        <Method name="getSocialNumber" returnType="int" visibility="public"/>
+        <Method name="setSocialNumber" returnType="void" visibility="public">
+          <Argument type="int" name="socialNumber"/>
+        </Method>
+        <Method name="getLastName" returnType="String" visibility="public"/>
+        <Method name="setLastName" returnType="void" visibility="public">
+          <Argument type="String" name="lastName"/>
+        </Method>
+        <Method name="getGender" returnType="String" visibility="public"/>
+        <Method name="setGender" returnType="void" visibility="public">
+          <Argument type="String" name="gender"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PersonDirectory" package="business" visibility="public" xPosition="1220.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="VitalSignHistory" package="business" visibility="public" xPosition="1520.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="addVitals" returnType="VitalSigns" visibility="public">
+          <Argument type="Patient" name="pat"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="VitalSigns" package="business" visibility="public" xPosition="1820.0" yPosition="420.0">
+      <Fields>
+        <Field name="cholestrol" type="int" visibility="private"/>
+        <Field name="respirationRate" type="int" visibility="private"/>
+        <Field name="bloodPressure" type="int" visibility="private"/>
+        <Field name="MRN" type="int" visibility="private"/>
+        <Field name="vitalsList" type="ArrayList&lt;VitalSigns&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getVitalsList" returnType="ArrayList&lt;VitalSigns&gt;" visibility="public"/>
+        <Method name="setVitalsList" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;VitalSigns&gt;" name="vitalsList"/>
+        </Method>
+        <Method name="getMRN" returnType="int" visibility="public"/>
+        <Method name="setMRN" returnType="void" visibility="public">
+          <Argument type="int" name="MRN"/>
+        </Method>
+        <Method name="getCholestrol" returnType="int" visibility="public"/>
+        <Method name="setCholestrol" returnType="void" visibility="public">
+          <Argument type="int" name="cholestrol"/>
+        </Method>
+        <Method name="getRespirationRate" returnType="int" visibility="public"/>
+        <Method name="setRespirationRate" returnType="void" visibility="public">
+          <Argument type="int" name="respirationRate"/>
+        </Method>
+        <Method name="getBloodPressure" returnType="int" visibility="public"/>
+        <Method name="setBloodPressure" returnType="void" visibility="public">
+          <Argument type="int" name="bloodPressure"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="RandomGenerator" package="logic" visibility="public" xPosition="2120.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="generateGender" returnType="String" visibility="public" isStatic="true"/>
+        <Method name="getRandomBoolean" returnType="boolean" visibility="public" isStatic="true"/>
+        <Method name="generateString" returnType="String" visibility="public" isStatic="true">
+          <Argument type="Random" name="rng"/>
+          <Argument type="String" name="characters"/>
+          <Argument type="int" name="length"/>
+        </Method>
+        <Method name="randInt" returnType="int" visibility="public" isStatic="true">
+          <Argument type="int" name="min"/>
+          <Argument type="int" name="max"/>
+        </Method>
+        <Method name="randDouble" returnType="double" visibility="public" isStatic="true">
+          <Argument type="int" name="min"/>
+          <Argument type="int" name="max"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="InputUser" package="userInterface" visibility="public" xPosition="20.0" yPosition="820.0">
+      <Fields>
+        <Field name="totalScore" type="double" visibility="package"/>
+        <Field name="otherFactors" type="double" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getFromUser" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="LinearRegressionModel" package="userInterface" visibility="public" xPosition="320.0" yPosition="820.0">
+      <Fields>
+        <Field name="a" type="double" visibility="private"/>
+        <Field name="b" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double[]" name="x"/>
+          <Argument type="double[]" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCoefficients" returnType="double[]" visibility="public"/>
+        <Method name="compute" returnType="void" visibility="public"/>
+        <Method name="evaluateAt" returnType="double" visibility="public">
+          <Argument type="double" name="x"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MathFormula" package="userInterface" visibility="public" xPosition="620.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="covariance" returnType="double" visibility="public" isStatic="true">
+          <Argument type="double[]" name="x"/>
+          <Argument type="double[]" name="y"/>
+        </Method>
+        <Method name="mean" returnType="double" visibility="public" isStatic="true">
+          <Argument type="double[]" name="data"/>
+        </Method>
+        <Method name="variance" returnType="double" visibility="public" isStatic="true">
+          <Argument type="double[]" name="data"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="RegressionModel" package="userInterface" visibility="public" isAbstract="true" xPosition="920.0" yPosition="820.0">
+      <Fields>
+        <Field name="xValues" type="double[]" visibility="protected"/>
+        <Field name="yValues" type="double[]" visibility="protected"/>
+        <Field name="computed" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double[]" name="x"/>
+          <Argument type="double[]" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getXValues" returnType="double[]" visibility="public"/>
+        <Method name="getYValues" returnType="double[]" visibility="public"/>
+        <Method name="getCoefficients" returnType="double[]" visibility="public" isAbstract="true"/>
+        <Method name="compute" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="evaluateAt" returnType="double" visibility="public" isAbstract="true">
+          <Argument type="double" name="x"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TestClass" package="userInterface" visibility="public" xPosition="1220.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="ageVsBloodPressure" returnType="void" visibility="public"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="h"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="business.VitalSigns" target="business.VitalSigns" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.Community" target="business.HouseDirectory" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.VitalSignHistory" target="business.VitalSigns" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="vitalSign" source="business.Patient" target="business.VitalSigns" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;VitalSigns&gt;"/>
+    <HasRelation name="patientlist" source="business.Family" target="business.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Patient&gt;"/>
+    <HasRelation name="houseDirectory" source="business.Community" target="business.HouseDirectory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cityDirectory" source="business.CityDirectory" target="business.City" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;City&gt;"/>
+    <HasRelation name="gov" source="business.City" target="business.Government" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="userInterface.LinearRegressionModel" target="userInterface.RegressionModel"/>
+    <UseRelation source="business.CityDirectory" target="business.City" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.FamilyDirectory" target="business.Family" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.CommunityDirectory" target="business.Community" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.PatientDirectory" target="business.Patient" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.HouseDirectory" target="business.House" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="familyList" source="business.FamilyDirectory" target="business.Family" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Family&gt;"/>
+    <HasRelation name="vitalsList" source="business.VitalSigns" target="business.VitalSigns" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;VitalSigns&gt;"/>
+    <HasRelation name="communityDirectory" source="business.CommunityDirectory" target="business.Community" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Community&gt;"/>
+    <UseRelation source="business.House" target="business.Family" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="familyList" source="business.House" target="business.Family" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Family&gt;"/>
+    <UseRelation source="business.Patient" target="business.VitalSigns" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="houseList" source="business.HouseDirectory" target="business.House" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;House&gt;"/>
+    <UseRelation source="business.FamilyDirectory" target="business.HouseDirectory" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="business.Patient" target="business.Person"/>
+    <UseRelation source="business.Family" target="business.Patient" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

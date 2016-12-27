@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Predictive_Personilized_Health">
+  <ClassDiagramComponents>
+    <Class name="EcoSystem" package="Business" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="business" type="EcoSystem" visibility="private" isStatic="true"/>
+        <Field name="networkList" type="ArrayList&lt;Network&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Employee" package="Business.Employee" visibility="public" xPosition="397.0" yPosition="103.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="EmployeeDirectory" package="Business.Employee" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="employeeList" type="ArrayList&lt;Employee&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Enterprise" package="Business.Enterprise" visibility="public" isAbstract="true" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="enterpriseType" type="EnterpriseType" visibility="private"/>
+        <Field name="organizationDirectory" type="OrganizationDirectory" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="EnterpriseDirectory" package="Business.Enterprise" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="enterpriseList" type="ArrayList&lt;Enterprise&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="HospitalEnterprise" package="Business.Enterprise" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="AdminOrganization" package="Business.Organization" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="DoctorOrganization" package="Business.Organization" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="LabOrganization" package="Business.Organization" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Organization" package="Business.Organization" visibility="public" isAbstract="true" xPosition="320.0" yPosition="420.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="workQueue" type="WorkQueue" visibility="private"/>
+        <Field name="employeeDirectory" type="EmployeeDirectory" visibility="private"/>
+        <Field name="userAccountDirectory" type="UserAccountDirectory" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="OrganizationDirectory" package="Business.Organization" visibility="public" xPosition="620.0" yPosition="420.0">
+      <Fields>
+        <Field name="organizationList" type="ArrayList&lt;Organization&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="AdminRole" package="Business.Role" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createWorkArea" returnType="JPanel" visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="UserAccount" name="account"/>
+          <Argument type="Organization" name="organization"/>
+          <Argument type="Enterprise" name="enterprise"/>
+          <Argument type="EcoSystem" name="business"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DoctorRole" package="Business.Role" visibility="public" xPosition="1220.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createWorkArea" returnType="JPanel" visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="UserAccount" name="account"/>
+          <Argument type="Organization" name="organization"/>
+          <Argument type="Enterprise" name="enterprise"/>
+          <Argument type="EcoSystem" name="business"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="LabAssistantRole" package="Business.Role" visibility="public" xPosition="1520.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createWorkArea" returnType="JPanel" visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="UserAccount" name="account"/>
+          <Argument type="Organization" name="organization"/>
+          <Argument type="Enterprise" name="enterprise"/>
+          <Argument type="EcoSystem" name="business"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Role" package="Business.Role" visibility="public" isAbstract="true" xPosition="1820.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createWorkArea" returnType="JPanel" visibility="public" isAbstract="true">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="UserAccount" name="account"/>
+          <Argument type="Organization" name="organization"/>
+          <Argument type="Enterprise" name="enterprise"/>
+          <Argument type="EcoSystem" name="business"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SystemAdminRole" package="Business.Role" visibility="public" xPosition="2120.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createWorkArea" returnType="JPanel" visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="UserAccount" name="account"/>
+          <Argument type="Organization" name="organization"/>
+          <Argument type="Enterprise" name="enterprise"/>
+          <Argument type="EcoSystem" name="system"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="UserAccount" package="Business.UserAccount" visibility="public" xPosition="20.0" yPosition="820.0">
+      <Fields>
+        <Field name="employee" type="Employee" visibility="private"/>
+        <Field name="role" type="Role" visibility="private"/>
+        <Field name="workQueue" type="WorkQueue" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="UserAccountDirectory" package="Business.UserAccount" visibility="public" xPosition="320.0" yPosition="820.0">
+      <Fields>
+        <Field name="userAccountList" type="ArrayList&lt;UserAccount&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="LabTestWorkRequest" package="Business.WorkQueue" visibility="public" xPosition="620.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="WorkQueue" package="Business.WorkQueue" visibility="public" xPosition="920.0" yPosition="820.0">
+      <Fields>
+        <Field name="workRequestList" type="ArrayList&lt;WorkRequest&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="WorkRequest" package="Business.WorkQueue" visibility="public" isAbstract="true" xPosition="1220.0" yPosition="820.0">
+      <Fields>
+        <Field name="sender" type="UserAccount" visibility="private"/>
+        <Field name="receiver" type="UserAccount" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="AdminWorkAreaJPanel" package="UserInterface.AdministrativeRole" visibility="public" xPosition="1520.0" yPosition="820.0">
+      <Fields>
+        <Field name="userProcessContainer" type="JPanel" visibility="package"/>
+        <Field name="enterprise" type="Enterprise" visibility="package"/>
+        <Field name="enterpriseLabel" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="manageEmployeeJButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="manageOrganizationJButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="userJButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="valueLabel" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="Enterprise" name="enterprise"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="void" visibility="private"/>
+        <Method name="userJButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="manageEmployeeJButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="manageOrganizationJButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ManageEmployeeJPanel" package="UserInterface.AdministrativeRole" visibility="public" xPosition="1820.0" yPosition="820.0">
+      <Fields>
+        <Field name="organizationDir" type="OrganizationDirectory" visibility="private"/>
+        <Field name="userProcessContainer" type="JPanel" visibility="private"/>
+        <Field name="addJButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="backJButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="nameJTextField" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="organizationEmpJComboBox" type="javax.swing.JComboBox" visibility="private"/>
+        <Field name="organizationJComboBox" type="javax.swing.JComboBox" visibility="private"/>
+        <Field name="organizationJTable" type="javax.swing.JTable" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="OrganizationDirectory" name="organizationDir"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="populateOrganizationComboBox" returnType="void" visibility="public"/>
+        <Method name="populateOrganizationEmpComboBox" returnType="void" visibility="public"/>
+        <Method name="populateTable" returnType="void" visibility="private">
+          <Argument type="Organization" name="organization"/>
+        </Method>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="addJButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="backJButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="organizationJComboBoxActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ManageOrganizationJPanel" package="UserInterface.AdministrativeRole" visibility="public" xPosition="2120.0" yPosition="820.0">
+      <Fields>
+        <Field name="directory" type="OrganizationDirectory" visibility="private"/>
+        <Field name="userProcessContainer" type="JPanel" visibility="private"/>
+        <Field name="addJButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="backJButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="organizationJComboBox" type="javax.swing.JComboBox" visibility="private"/>
+        <Field name="organizationJTable" type="javax.swing.JTable" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="OrganizationDirectory" name="directory"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="populateCombo" returnType="void" visibility="private"/>
+        <Method name="populateTable" returnType="void" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="addJButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="backJButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ManageUserAccountJPanel" package="UserInterface.AdministrativeRole" visibility="public" xPosition="20.0" yPosition="1220.0">
+      <Fields>
+        <Field name="container" type="JPanel" visibility="private"/>
+        <Field name="enterprise" type="Enterprise" visibility="private"/>
+        <Field name="backjButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="createUserJButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="employeeJComboBox" type="javax.swing.JComboBox" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="nameJTextField" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="organizationJComboBox" type="javax.swing.JComboBox" visibility="private"/>
+        <Field name="passwordJTextField" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="roleJComboBox" type="javax.swing.JComboBox" visibility="private"/>
+        <Field name="userJTable" type="javax.swing.JTable" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JPanel" name="container"/>
+          <Argument type="Enterprise" name="enterprise"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="popOrganizationComboBox" returnType="void" visibility="public"/>
+        <Method name="populateEmployeeComboBox" returnType="void" visibility="public">
+          <Argument type="Organization" name="organization"/>
+        </Method>
+        <Method name="populateRoleComboBox" returnType="void" visibility="private">
+          <Argument type="Organization" name="organization"/>
+        </Method>
+        <Method name="popData" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="createUserJButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="backjButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="organizationJComboBoxActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DoctorWorkAreaJPanel" package="UserInterface.DoctorRole" visibility="public" xPosition="320.0" yPosition="1220.0">
+      <Fields>
+        <Field name="userProcessContainer" type="JPanel" visibility="private"/>
+        <Field name="organization" type="DoctorOrganization" visibility="private"/>
+        <Field name="enterprise" type="Enterprise" visibility="private"/>
+        <Field name="userAccount" type="UserAccount" visibility="private"/>
+        <Field name="enterpriseLabel" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="refreshTestJButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="requestTestJButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="valueLabel" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="workRequestJTable" type="javax.swing.JTable" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="UserAccount" name="account"/>
+          <Argument type="DoctorOrganization" name="organization"/>
+          <Argument type="Enterprise" name="enterprise"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="populateRequestTable" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="requestTestJButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="refreshTestJButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="RequestLabTestJPanel" package="UserInterface.DoctorRole" visibility="public" xPosition="620.0" yPosition="1220.0">
+      <Fields>
+        <Field name="userProcessContainer" type="JPanel" visibility="private"/>
+        <Field name="enterprise" type="Enterprise" visibility="private"/>
+        <Field name="userAccount" type="UserAccount" visibility="private"/>
+        <Field name="backJButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="enterpriseLabel" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="messageJTextField" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="requestTestJButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="valueLabel" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="UserAccount" name="account"/>
+          <Argument type="Enterprise" name="enterprise"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="requestTestJButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="backJButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="LabAssistantWorkAreaJPanel" package="UserInterface.LabAssistantRole" visibility="public" xPosition="920.0" yPosition="1220.0">
+      <Fields>
+        <Field name="userProcessContainer" type="JPanel" visibility="private"/>
+        <Field name="business" type="EcoSystem" visibility="private"/>
+        <Field name="userAccount" type="UserAccount" visibility="private"/>
+        <Field name="labOrganization" type="LabOrganization" visibility="private"/>
+        <Field name="assignJButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="processJButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="refreshJButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="workRequestJTable" type="javax.swing.JTable" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="UserAccount" name="account"/>
+          <Argument type="Organization" name="organization"/>
+          <Argument type="EcoSystem" name="business"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="populateTable" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="assignJButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="processJButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="refreshJButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ProcessWorkRequestJPanel" package="UserInterface.LabAssistantRole" visibility="public" xPosition="1220.0" yPosition="1220.0">
+      <Fields>
+        <Field name="userProcessContainer" type="JPanel" visibility="package"/>
+        <Field name="request" type="LabTestWorkRequest" visibility="package"/>
+        <Field name="backJButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="resultJTextField" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="submitJButton" type="javax.swing.JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="LabTestWorkRequest" name="request"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="backJButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="submitJButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ManageEnterpriseAdminJPanel" package="userinterface.SystemAdminWorkArea" visibility="public" xPosition="1520.0" yPosition="1220.0">
+      <Fields>
+        <Field name="userProcessContainer" type="JPanel" visibility="private"/>
+        <Field name="system" type="EcoSystem" visibility="private"/>
+        <Field name="backJButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="enterpriseJComboBox" type="javax.swing.JComboBox" visibility="private"/>
+        <Field name="enterpriseJTable" type="javax.swing.JTable" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="nameJTextField" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="networkJComboBox" type="javax.swing.JComboBox" visibility="private"/>
+        <Field name="passwordJPasswordField" type="javax.swing.JPasswordField" visibility="private"/>
+        <Field name="submitJButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="usernameJTextField" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="EcoSystem" name="system"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="populateTable" returnType="void" visibility="private"/>
+        <Method name="populateNetworkComboBox" returnType="void" visibility="private"/>
+        <Method name="populateEnterpriseComboBox" returnType="void" visibility="private">
+          <Argument type="Network" name="network"/>
+        </Method>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="networkJComboBoxActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="submitJButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="backJButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ManageEnterpriseJPanel" package="userinterface.SystemAdminWorkArea" visibility="public" xPosition="1820.0" yPosition="1220.0">
+      <Fields>
+        <Field name="userProcessContainer" type="JPanel" visibility="private"/>
+        <Field name="system" type="EcoSystem" visibility="private"/>
+        <Field name="backJButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="enterpriseJTable" type="javax.swing.JTable" visibility="private"/>
+        <Field name="enterpriseTypeJComboBox" type="javax.swing.JComboBox" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="nameJTextField" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="networkJComboBox" type="javax.swing.JComboBox" visibility="private"/>
+        <Field name="submitJButton" type="javax.swing.JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="EcoSystem" name="system"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="populateTable" returnType="void" visibility="private"/>
+        <Method name="populateComboBox" returnType="void" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="submitJButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="backJButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ManageNetworkJPanel" package="userinterface.SystemAdminWorkArea" visibility="public" xPosition="2120.0" yPosition="1220.0">
+      <Fields>
+        <Field name="userProcessContainer" type="JPanel" visibility="private"/>
+        <Field name="system" type="EcoSystem" visibility="private"/>
+        <Field name="backJButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="nameJTextField" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="networkJTable" type="javax.swing.JTable" visibility="private"/>
+        <Field name="submitJButton" type="javax.swing.JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="EcoSystem" name="system"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="populateNetworkTable" returnType="void" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="submitJButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="backJButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SystemAdminWorkAreaJPanel" package="userinterface.SystemAdminWorkArea" visibility="public" xPosition="20.0" yPosition="1620.0">
+      <Fields>
+        <Field name="userProcessContainer" type="JPanel" visibility="package"/>
+        <Field name="system" type="EcoSystem" visibility="package"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel2" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jSplitPane" type="javax.swing.JSplitPane" visibility="private"/>
+        <Field name="jTree" type="javax.swing.JTree" visibility="private"/>
+        <Field name="manageEnterpriseAdminBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="manageEnterpriseBtn1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="manageNetworkBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="selectedNodeJLabel" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="EcoSystem" name="system"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="populateTree" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="manageNetworkBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="manageEnterpriseBtn1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="manageEnterpriseAdminBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTreeValueChanged" returnType="void" visibility="private">
+          <Argument type="javax.swing.event.TreeSelectionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="userAccount" source="UserInterface.LabAssistantRole.LabAssistantWorkAreaJPanel" target="Business.UserAccount.UserAccount" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="organization" source="UserInterface.DoctorRole.DoctorWorkAreaJPanel" target="Business.Organization.DoctorOrganization" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="sender" source="Business.WorkQueue.WorkRequest" target="Business.UserAccount.UserAccount" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Business.Organization.AdminOrganization" target="Business.Organization.Organization"/>
+    <IsRelation name="is" source="Business.Enterprise.HospitalEnterprise" target="Business.Enterprise.Enterprise"/>
+    <HasRelation name="enterprise" source="UserInterface.AdministrativeRole.AdminWorkAreaJPanel" target="Business.Enterprise.Enterprise" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Business.Enterprise.Enterprise" target="Business.Organization.Organization"/>
+    <IsRelation name="is" source="Business.Role.LabAssistantRole" target="Business.Role.Role"/>
+    <HasRelation name="enterprise" source="UserInterface.AdministrativeRole.ManageUserAccountJPanel" target="Business.Enterprise.Enterprise" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="system" source="userinterface.SystemAdminWorkArea.ManageEnterpriseAdminJPanel" target="Business.EcoSystem" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="organizationDir" source="UserInterface.AdministrativeRole.ManageEmployeeJPanel" target="Business.Organization.OrganizationDirectory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="workRequestList" source="Business.WorkQueue.WorkQueue" target="Business.WorkQueue.WorkRequest" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;WorkRequest&gt;"/>
+    <HasRelation name="employeeList" source="Business.Employee.EmployeeDirectory" target="Business.Employee.Employee" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Employee&gt;"/>
+    <HasRelation name="enterprise" source="UserInterface.DoctorRole.DoctorWorkAreaJPanel" target="Business.Enterprise.Enterprise" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Business.Role.AdminRole" target="Business.Role.Role"/>
+    <HasRelation name="enterpriseList" source="Business.Enterprise.EnterpriseDirectory" target="Business.Enterprise.Enterprise" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Enterprise&gt;"/>
+    <HasRelation name="role" source="Business.UserAccount.UserAccount" target="Business.Role.Role" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="userAccountDirectory" source="Business.Organization.Organization" target="Business.UserAccount.UserAccountDirectory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Business.Organization.LabOrganization" target="Business.Organization.Organization"/>
+    <IsRelation name="is" source="Business.WorkQueue.LabTestWorkRequest" target="Business.WorkQueue.WorkRequest"/>
+    <HasRelation name="system" source="userinterface.SystemAdminWorkArea.ManageEnterpriseJPanel" target="Business.EcoSystem" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="directory" source="UserInterface.AdministrativeRole.ManageOrganizationJPanel" target="Business.Organization.OrganizationDirectory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="workQueue" source="Business.Organization.Organization" target="Business.WorkQueue.WorkQueue" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="WorkQueue"/>
+    <HasRelation name="userAccountList" source="Business.UserAccount.UserAccountDirectory" target="Business.UserAccount.UserAccount" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;UserAccount&gt;"/>
+    <HasRelation name="workQueue" source="Business.UserAccount.UserAccount" target="Business.WorkQueue.WorkQueue" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="WorkQueue"/>
+    <HasRelation name="enterprise" source="UserInterface.DoctorRole.RequestLabTestJPanel" target="Business.Enterprise.Enterprise" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="system" source="userinterface.SystemAdminWorkArea.ManageNetworkJPanel" target="Business.EcoSystem" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="business" source="UserInterface.LabAssistantRole.LabAssistantWorkAreaJPanel" target="Business.EcoSystem" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="organizationDirectory" source="Business.Enterprise.Enterprise" target="Business.Organization.OrganizationDirectory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="employeeDirectory" source="Business.Organization.Organization" target="Business.Employee.EmployeeDirectory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="employee" source="Business.UserAccount.UserAccount" target="Business.Employee.Employee" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="userAccount" source="UserInterface.DoctorRole.DoctorWorkAreaJPanel" target="Business.UserAccount.UserAccount" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="labOrganization" source="UserInterface.LabAssistantRole.LabAssistantWorkAreaJPanel" target="Business.Organization.LabOrganization" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Business.Role.DoctorRole" target="Business.Role.Role"/>
+    <HasRelation name="request" source="UserInterface.LabAssistantRole.ProcessWorkRequestJPanel" target="Business.WorkQueue.LabTestWorkRequest" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="organizationList" source="Business.Organization.OrganizationDirectory" target="Business.Organization.Organization" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Organization&gt;"/>
+    <IsRelation name="is" source="Business.Role.SystemAdminRole" target="Business.Role.Role"/>
+    <HasRelation name="system" source="userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel" target="Business.EcoSystem" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="receiver" source="Business.WorkQueue.WorkRequest" target="Business.UserAccount.UserAccount" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="business" source="Business.EcoSystem" target="Business.EcoSystem" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="userAccount" source="UserInterface.DoctorRole.RequestLabTestJPanel" target="Business.UserAccount.UserAccount" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Business.EcoSystem" target="Business.Organization.Organization"/>
+    <IsRelation name="is" source="Business.Organization.DoctorOrganization" target="Business.Organization.Organization"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

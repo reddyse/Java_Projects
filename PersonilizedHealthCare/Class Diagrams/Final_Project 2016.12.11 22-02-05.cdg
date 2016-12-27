@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Final_Project">
+  <ClassDiagramComponents>
+    <Class name="ConfigureASystem" package="business" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="configure" returnType="EcoSystem" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="CityIndicators" package="business.datageneration" visibility="public" xPosition="327.0" yPosition="122.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="main" type="Main" visibility="private"/>
+        <Field name="wind" type="Wind" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getMain" returnType="Main" visibility="public"/>
+        <Method name="setMain" returnType="void" visibility="public">
+          <Argument type="Main" name="main"/>
+        </Method>
+        <Method name="getWind" returnType="Wind" visibility="public"/>
+        <Method name="setWind" returnType="void" visibility="public">
+          <Argument type="Wind" name="wind"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FetchCityIndicatorsLive" package="business.datageneration" visibility="public" xPosition="540.0" yPosition="49.0">
+      <Fields>
+        <Field name="BaseUrl" type="String" visibility="private"/>
+        <Field name="ResponderUrl" type="String" visibility="private"/>
+        <Field name="responderParameters" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="city"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="generateData" returnType="String" visibility="public"/>
+        <Method name="generateRiskScore" returnType="float" visibility="public">
+          <Argument type="float" name="temp"/>
+          <Argument type="float" name="pressure"/>
+          <Argument type="float" name="humidity"/>
+          <Argument type="float" name="windspeed"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Wind" package="business.datageneration" visibility="public" xPosition="1297.0" yPosition="20.0">
+      <Fields>
+        <Field name="speed" type="String" visibility="private"/>
+        <Field name="deg" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getSpeed" returnType="String" visibility="public"/>
+        <Method name="setSpeed" returnType="void" visibility="public">
+          <Argument type="String" name="speed"/>
+        </Method>
+        <Method name="getDeg" returnType="String" visibility="public"/>
+        <Method name="setDeg" returnType="void" visibility="public">
+          <Argument type="String" name="deg"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="EcoSystem" package="business" visibility="public" xPosition="1563.0" yPosition="20.0">
+      <Fields>
+        <Field name="ecoSystem" type="EcoSystem" visibility="private" isStatic="true"/>
+        <Field name="countryList" type="ArrayList&lt;Country&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="private"/>
+      </Constructors>
+      <Methods>
+        <Method name="getInstance" returnType="EcoSystem" visibility="public" isStatic="true"/>
+        <Method name="getSupportedRole" returnType="ArrayList&lt;Role&gt;" visibility="public"/>
+        <Method name="getCountryList" returnType="ArrayList&lt;Country&gt;" visibility="public"/>
+        <Method name="createCountry" returnType="Country" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="checkIfUserNameIsUnique" returnType="boolean" visibility="public">
+          <Argument type="String" name="userName"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Employee" package="business.employee" visibility="public" xPosition="33.0" yPosition="372.0">
+      <Fields>
+        <Field name="count" type="int" visibility="private" isStatic="true"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="id" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="EmployeeDirectory" package="business.employee" visibility="public" xPosition="1.0" yPosition="165.0">
+      <Fields>
+        <Field name="employeeDirectory" type="ArrayList&lt;Employee&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getEmployeeDirectory" returnType="ArrayList&lt;Employee&gt;" visibility="public"/>
+        <Method name="createAnEmployee" returnType="Employee" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Enterprise" package="business.enterprise" visibility="public" isAbstract="true" xPosition="524.0" yPosition="355.0">
+      <Fields>
+        <Field name="enterpriseType" type="EnterpriseType" visibility="private"/>
+        <Field name="organizationDirectory" type="OrganizationDirectory" visibility="private"/>
+        <Field name="laborderWorkList" type="LabOrderWorkList" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="EnterpriseType" name="type"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getEnterpriseType" returnType="EnterpriseType" visibility="public"/>
+        <Method name="getOrganizationDirectory" returnType="OrganizationDirectory" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="EnterpriseDirectory" package="business.enterprise" visibility="public" xPosition="843.0" yPosition="198.0">
+      <Fields>
+        <Field name="enterpriseDirectory" type="ArrayList&lt;Enterprise&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getEnterpriseDirectory" returnType="ArrayList&lt;Enterprise&gt;" visibility="public"/>
+        <Method name="createAnEnterprise" returnType="Enterprise" visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="EnterpriseType" name="type"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="GovernmentEnterprise" package="business.enterprise" visibility="public" xPosition="1030.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getSupportedRole" returnType="ArrayList&lt;Role&gt;" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="MedicalInstitute" package="business.enterprise" visibility="public" xPosition="1276.0" yPosition="355.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getSupportedRole" returnType="ArrayList&lt;Role&gt;" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="City" package="business.geography" visibility="public" xPosition="1978.0" yPosition="88.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Country" package="business.geography" visibility="public" xPosition="1951.0" yPosition="392.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="enterpriseDirectory" type="EnterpriseDirectory" visibility="private"/>
+        <Field name="countryID" type="int" visibility="private"/>
+        <Field name="count" type="int" visibility="private" isStatic="true"/>
+        <Field name="stateList" type="ArrayList&lt;State&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="getEnterpriseDirectory" returnType="EnterpriseDirectory" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getCountryID" returnType="int" visibility="public"/>
+        <Method name="getStateList" returnType="ArrayList&lt;State&gt;" visibility="public"/>
+        <Method name="createANewState" returnType="State" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="State" package="business.geography" visibility="public" xPosition="20.0" yPosition="820.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="cityList" type="ArrayList&lt;City&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="getCityList" returnType="ArrayList&lt;City&gt;" visibility="public"/>
+        <Method name="createANewCity" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="HospitalOrganization" package="business.organization" visibility="public" xPosition="320.0" yPosition="959.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getSupportedRole" returnType="ArrayList&lt;Role&gt;" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="LabOrganization" package="business.organization" visibility="public" xPosition="601.0" yPosition="1065.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getSupportedRole" returnType="ArrayList&lt;Role&gt;" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Organization" package="business.organization" visibility="public" isAbstract="true" xPosition="965.0" yPosition="836.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="employeeDirectory" type="EmployeeDirectory" visibility="private"/>
+        <Field name="userAccountDirectory" type="UserAccountDirectory" visibility="private"/>
+        <Field name="workQueue" type="WorkQueue" visibility="private"/>
+        <Field name="organizationID" type="int" visibility="private"/>
+        <Field name="count" type="int" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="getEmployeeDirectory" returnType="EmployeeDirectory" visibility="public"/>
+        <Method name="getUserAccountDirectory" returnType="UserAccountDirectory" visibility="public"/>
+        <Method name="getWorkQueue" returnType="WorkQueue" visibility="public"/>
+        <Method name="getOrganizationID" returnType="int" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getSupportedRole" returnType="ArrayList&lt;Role&gt;" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="OrganizationDirectory" package="business.organization" visibility="public" xPosition="1308.0" yPosition="686.0">
+      <Fields>
+        <Field name="governmentOrganizationDirectory" type="ArrayList&lt;Organization&gt;" visibility="private"/>
+        <Field name="hospitalOrganizationDirectory" type="ArrayList&lt;HospitalOrganization&gt;" visibility="private"/>
+        <Field name="labOrganizationDirectory" type="ArrayList&lt;LabOrganization&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getGovernmentOrganizationDirectory" returnType="ArrayList&lt;Organization&gt;" visibility="public"/>
+        <Method name="getHospitalOrganizationDirectory" returnType="ArrayList&lt;HospitalOrganization&gt;" visibility="public"/>
+        <Method name="getLabOrganizationDirectory" returnType="ArrayList&lt;LabOrganization&gt;" visibility="public"/>
+        <Method name="createAGovernmentOrganization" returnType="Organization" visibility="public">
+          <Argument type="GovernmentOrganizationType" name="type"/>
+        </Method>
+        <Method name="createAnHospitalOrganization" returnType="Organization" visibility="public">
+          <Argument type="MedicalInstituteOrganizationType" name="type"/>
+        </Method>
+        <Method name="createAnLabOrganization" returnType="Organization" visibility="public">
+          <Argument type="MedicalInstituteOrganizationType" name="type"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PeopleOrganization" package="business.organization" visibility="public" xPosition="1719.0" yPosition="944.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getSupportedRole" returnType="ArrayList&lt;Role&gt;" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="AdminRole" package="business.role" visibility="public" xPosition="1196.0" yPosition="1080.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createWorkArea" returnType="JPanel" visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="UserAccount" name="userAccount"/>
+          <Argument type="Organization" name="organization"/>
+          <Argument type="Enterprise" name="enterprise"/>
+          <Argument type="EcoSystem" name="ecoSystem"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DoctorRole" package="business.role" visibility="public" xPosition="1317.0" yPosition="782.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createWorkArea" returnType="JPanel" visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="UserAccount" name="userAccount"/>
+          <Argument type="Organization" name="organization"/>
+          <Argument type="Enterprise" name="enterprise"/>
+          <Argument type="EcoSystem" name="ecoSystem"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="LabRole" package="business.role" visibility="public" xPosition="-467.0" yPosition="1358.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createWorkArea" returnType="JPanel" visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="UserAccount" name="userAccount"/>
+          <Argument type="Organization" name="organization"/>
+          <Argument type="Enterprise" name="enterprise"/>
+          <Argument type="EcoSystem" name="ecoSystem"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="PatientRole" package="business.role" visibility="public" xPosition="-363.0" yPosition="1186.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createWorkArea" returnType="JPanel" visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="UserAccount" name="userAccount"/>
+          <Argument type="Organization" name="organization"/>
+          <Argument type="Enterprise" name="enterprise"/>
+          <Argument type="EcoSystem" name="ecoSystem"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="PersonRole" package="business.role" visibility="public" xPosition="102.0" yPosition="1395.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createWorkArea" returnType="JPanel" visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="UserAccount" name="userAccount"/>
+          <Argument type="Organization" name="organization"/>
+          <Argument type="Enterprise" name="enterprise"/>
+          <Argument type="EcoSystem" name="ecoSystem"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Role" package="business.role" visibility="public" isAbstract="true" xPosition="125.0" yPosition="1220.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createWorkArea" returnType="JPanel" visibility="public" isAbstract="true">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="UserAccount" name="userAccount"/>
+          <Argument type="Organization" name="organization"/>
+          <Argument type="Enterprise" name="enterprise"/>
+          <Argument type="EcoSystem" name="ecoSystem"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="SystemAdminRole" package="business.role" visibility="public" xPosition="1364.0" yPosition="1004.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createWorkArea" returnType="JPanel" visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="UserAccount" name="userAccount"/>
+          <Argument type="Organization" name="organization"/>
+          <Argument type="Enterprise" name="enterprise"/>
+          <Argument type="EcoSystem" name="ecoSystem"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="UserAccount" package="business.useraccount" visibility="public" xPosition="1364.0" yPosition="1358.0">
+      <Fields>
+        <Field name="userName" type="String" visibility="private"/>
+        <Field name="password" type="String" visibility="private"/>
+        <Field name="role" type="Role" visibility="private"/>
+        <Field name="workQueue" type="WorkQueue" visibility="private"/>
+        <Field name="employee" type="Employee" visibility="private"/>
+        <Field name="count" type="int" visibility="private" isStatic="true"/>
+        <Field name="userID" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="userName"/>
+          <Argument type="String" name="password"/>
+          <Argument type="Role" name="role"/>
+          <Argument type="Employee" name="employee"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getUserName" returnType="String" visibility="public"/>
+        <Method name="getPassword" returnType="String" visibility="public"/>
+        <Method name="getRole" returnType="Role" visibility="public"/>
+        <Method name="getWorkQueue" returnType="WorkQueue" visibility="public"/>
+        <Method name="getEmployee" returnType="Employee" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getUserID" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="UserAccountDirectory" package="business.useraccount" visibility="public" xPosition="1802.0" yPosition="1220.0">
+      <Fields>
+        <Field name="userAccountDirectory" type="ArrayList&lt;UserAccount&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getUserAccountDirectory" returnType="ArrayList&lt;UserAccount&gt;" visibility="public"/>
+        <Method name="authenticateUser" returnType="UserAccount" visibility="public">
+          <Argument type="String" name="userName"/>
+          <Argument type="String" name="password"/>
+        </Method>
+        <Method name="checkIfUserNameIsUnique" returnType="boolean" visibility="public">
+          <Argument type="String" name="userName"/>
+        </Method>
+        <Method name="addUserAccount" returnType="UserAccount" visibility="public">
+          <Argument type="String" name="userName"/>
+          <Argument type="String" name="password"/>
+          <Argument type="Role" name="role"/>
+          <Argument type="Employee" name="employee"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ComplaintWorkRequest" package="business.workqueue" visibility="public" xPosition="-540.0" yPosition="1879.0">
+      <Fields>
+        <Field name="count" type="int" visibility="private" isStatic="true"/>
+        <Field name="complaintID" type="int" visibility="private"/>
+        <Field name="country" type="Country" visibility="private"/>
+        <Field name="state" type="State" visibility="private"/>
+        <Field name="city" type="City" visibility="private"/>
+        <Field name="crimeType" type="String" visibility="private"/>
+        <Field name="severityLevel" type="int" visibility="private"/>
+        <Field name="senderStatus" type="String" visibility="private"/>
+        <Field name="uniqueIdentificationNumber" type="String" visibility="private"/>
+        <Field name="actionTaken" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Country" name="country"/>
+          <Argument type="State" name="state"/>
+          <Argument type="City" name="city"/>
+          <Argument type="String" name="crimeType"/>
+          <Argument type="int" name="severityLevel"/>
+          <Argument type="String" name="senderStatus"/>
+          <Argument type="String" name="uniqueIdentificationNumber"/>
+          <Argument type="String" name="actionTaken"/>
+          <Argument type="UserAccount" name="sender"/>
+          <Argument type="UserAccount" name="receiver"/>
+          <Argument type="String" name="message"/>
+          <Argument type="String" name="status"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getComplaintID" returnType="int" visibility="public"/>
+        <Method name="getActionTaken" returnType="String" visibility="public"/>
+        <Method name="getCountry" returnType="Country" visibility="public"/>
+        <Method name="getState" returnType="State" visibility="public"/>
+        <Method name="getCity" returnType="City" visibility="public"/>
+        <Method name="getCrimeType" returnType="String" visibility="public"/>
+        <Method name="getSeverityLevel" returnType="int" visibility="public"/>
+        <Method name="getSenderStatus" returnType="String" visibility="public"/>
+        <Method name="getUniqueIdentificationNumber" returnType="String" visibility="public"/>
+        <Method name="setActionTaken" returnType="void" visibility="public">
+          <Argument type="String" name="actionTaken"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="LabOrderWorkList" package="business.workqueue" visibility="public" xPosition="-77.0" yPosition="1738.0">
+      <Fields>
+        <Field name="labworklist" type="ArrayList&lt;LabOrderWorkRequest&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getLabworklist" returnType="ArrayList&lt;LabOrderWorkRequest&gt;" visibility="public"/>
+        <Method name="setLabworklist" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;LabOrderWorkRequest&gt;" name="labworklist"/>
+        </Method>
+        <Method name="addRequest" returnType="void" visibility="public">
+          <Argument type="LabOrderWorkRequest" name="request"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="LabOrderWorkRequest" package="business.workqueue" visibility="public" xPosition="-871.0" yPosition="1516.0">
+      <Fields>
+        <Field name="count" type="int" visibility="private" isStatic="true"/>
+        <Field name="complaintID" type="int" visibility="private"/>
+        <Field name="country" type="Country" visibility="private"/>
+        <Field name="state" type="State" visibility="private"/>
+        <Field name="city" type="City" visibility="private"/>
+        <Field name="ordername" type="String" visibility="private"/>
+        <Field name="prioritylevel" type="int" visibility="private"/>
+        <Field name="requestdate" type="String" visibility="private"/>
+        <Field name="uniqueIdentificationNumber" type="String" visibility="private"/>
+        <Field name="actionTaken" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Country" name="country"/>
+          <Argument type="State" name="state"/>
+          <Argument type="City" name="city"/>
+          <Argument type="String" name="requestDate"/>
+          <Argument type="int" name="priorityLevel"/>
+          <Argument type="String" name="orderName"/>
+          <Argument type="String" name="uniqueIdentificationNumber"/>
+          <Argument type="String" name="actionTaken"/>
+          <Argument type="UserAccount" name="sender"/>
+          <Argument type="UserAccount" name="receiver"/>
+          <Argument type="String" name="message"/>
+          <Argument type="String" name="status"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCount" returnType="int" visibility="public" isStatic="true"/>
+        <Method name="setCount" returnType="void" visibility="public" isStatic="true">
+          <Argument type="int" name="count"/>
+        </Method>
+        <Method name="getComplaintID" returnType="int" visibility="public"/>
+        <Method name="setComplaintID" returnType="void" visibility="public">
+          <Argument type="int" name="complaintID"/>
+        </Method>
+        <Method name="getCountry" returnType="Country" visibility="public"/>
+        <Method name="setCountry" returnType="void" visibility="public">
+          <Argument type="Country" name="country"/>
+        </Method>
+        <Method name="getState" returnType="State" visibility="public"/>
+        <Method name="setState" returnType="void" visibility="public">
+          <Argument type="State" name="state"/>
+        </Method>
+        <Method name="getCity" returnType="City" visibility="public"/>
+        <Method name="setCity" returnType="void" visibility="public">
+          <Argument type="City" name="city"/>
+        </Method>
+        <Method name="getOrdername" returnType="String" visibility="public"/>
+        <Method name="setOrdername" returnType="void" visibility="public">
+          <Argument type="String" name="ordername"/>
+        </Method>
+        <Method name="getPrioritylevel" returnType="int" visibility="public"/>
+        <Method name="setPrioritylevel" returnType="void" visibility="public">
+          <Argument type="int" name="prioritylevel"/>
+        </Method>
+        <Method name="getRequestdate" returnType="String" visibility="public"/>
+        <Method name="setRequestdate" returnType="void" visibility="public">
+          <Argument type="String" name="requestdate"/>
+        </Method>
+        <Method name="getUniqueIdentificationNumber" returnType="String" visibility="public"/>
+        <Method name="setUniqueIdentificationNumber" returnType="void" visibility="public">
+          <Argument type="String" name="uniqueIdentificationNumber"/>
+        </Method>
+        <Method name="getActionTaken" returnType="String" visibility="public"/>
+        <Method name="setActionTaken" returnType="void" visibility="public">
+          <Argument type="String" name="actionTaken"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="WorkQueue" package="business.workqueue" visibility="public" xPosition="601.0" yPosition="1558.0">
+      <Fields>
+        <Field name="workQueue" type="ArrayList&lt;WorkRequest&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getWorkQueue" returnType="ArrayList&lt;WorkRequest&gt;" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="WorkRequest" package="business.workqueue" visibility="public" isAbstract="true" xPosition="1021.0" yPosition="1823.0">
+      <Fields>
+        <Field name="sender" type="UserAccount" visibility="private"/>
+        <Field name="receiver" type="UserAccount" visibility="private"/>
+        <Field name="message" type="String" visibility="private"/>
+        <Field name="status" type="String" visibility="private"/>
+        <Field name="requestDate" type="Date" visibility="private"/>
+        <Field name="resolvedDate" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="UserAccount" name="sender"/>
+          <Argument type="UserAccount" name="receiver"/>
+          <Argument type="String" name="message"/>
+          <Argument type="String" name="status"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getSender" returnType="UserAccount" visibility="public"/>
+        <Method name="getReceiver" returnType="UserAccount" visibility="public"/>
+        <Method name="getMessage" returnType="String" visibility="public"/>
+        <Method name="getStatus" returnType="String" visibility="public"/>
+        <Method name="getRequestDate" returnType="Date" visibility="public"/>
+        <Method name="getResolvedDate" returnType="Date" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="setReceiver" returnType="void" visibility="public">
+          <Argument type="UserAccount" name="receiver"/>
+        </Method>
+        <Method name="setStatus" returnType="void" visibility="public">
+          <Argument type="String" name="status"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="business.workqueue.ComplaintWorkRequest" target="business.geography.Country" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="laborderWorkList" source="business.enterprise.Enterprise" target="business.workqueue.LabOrderWorkList" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="LabOrderWorkList"/>
+    <UseRelation source="business.enterprise.Enterprise" target="business.enterprise.Enterprise" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="labOrganizationDirectory" source="business.organization.OrganizationDirectory" target="business.organization.LabOrganization" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;LabOrganization&gt;"/>
+    <UseRelation source="business.organization.Organization" target="business.useraccount.UserAccountDirectory" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.workqueue.WorkQueue" target="business.workqueue.WorkRequest" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="enterprise" source="userinterface.labRole.LabpersonWorkAreaJPanel" target="business.enterprise.Enterprise" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="country" source="userinterface.DoctorRole.DoctorWorkAreaJPanel" target="business.geography.Country" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.workqueue.ComplaintWorkRequest" target="business.geography.State" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="hospitalOrganizationDirectory" source="business.organization.OrganizationDirectory" target="business.organization.HospitalOrganization" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;HospitalOrganization&gt;"/>
+    <HasRelation name="workQueue" source="business.workqueue.WorkQueue" target="business.workqueue.WorkRequest" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;WorkRequest&gt;"/>
+    <HasRelation name="state" source="userinterface.DoctorRole.PlaceOrderJPanel" target="business.geography.State" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.role.LabRole" target="business.useraccount.UserAccount" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.geography.State" target="business.geography.City" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="state" source="userinterface.DoctorRole.ExaminePatientJPanel" target="business.geography.State" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.organization.OrganizationDirectory" target="business.organization.Organization" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.workqueue.LabOrderWorkList" target="business.workqueue.WorkRequest" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="business.enterprise.Enterprise" target="business.organization.Organization"/>
+    <UseRelation source="business.datageneration.CityIndicators" target="business.datageneration.Wind" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.organization.PeopleOrganization" target="business.role.Role" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="countryList" source="business.EcoSystem" target="business.geography.Country" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Country&gt;"/>
+    <UseRelation source="business.employee.EmployeeDirectory" target="business.employee.Employee" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.ConfigureASystem" target="business.EcoSystem" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="business.role.PatientRole" target="business.role.Role"/>
+    <HasRelation name="stateList" source="business.geography.Country" target="business.geography.State" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;State&gt;"/>
+    <UseRelation source="business.organization.Organization" target="business.role.Role" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.workqueue.ComplaintWorkRequest" target="business.geography.City" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.useraccount.UserAccount" target="business.workqueue.WorkQueue" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.organization.Organization" target="business.employee.EmployeeDirectory" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="enterprise" source="userinterface.PatientRole.PatientRoleJPanel" target="business.enterprise.Enterprise" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="useraccount" source="userinterface.DoctorRole.DoctorWorkAreaJPanel" target="business.useraccount.UserAccount" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="enterprise" source="userinterface.administrativeRole.ManageEmployeeJPanel" target="business.enterprise.Enterprise" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="employeeDirectory" source="business.organization.Organization" target="business.employee.EmployeeDirectory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.geography.Country" target="business.geography.State" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.enterprise.MedicalInstitute" target="business.role.Role" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="business.enterprise.MedicalInstitute" target="business.enterprise.Enterprise"/>
+    <HasRelation name="wind" source="business.datageneration.CityIndicators" target="business.datageneration.Wind" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="dB4OUtil" source="userinterface.MainJFrame" target="business.DB4OUtil.DB4OUtil" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="userAccountDirectory" source="business.organization.Organization" target="business.useraccount.UserAccountDirectory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="enterprise" source="userinterface.DoctorRole.ExaminePatientJPanel" target="business.enterprise.Enterprise" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="enterpriseDirectory" source="business.geography.Country" target="business.enterprise.EnterpriseDirectory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.useraccount.UserAccount" target="business.role.Role" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.workqueue.LabOrderWorkRequest" target="business.geography.State" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.useraccount.UserAccount" target="business.employee.Employee" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="business.role.PersonRole" target="business.role.Role"/>
+    <IsRelation name="is" source="business.organization.HospitalOrganization" target="business.organization.Organization"/>
+    <HasRelation name="ecoSystem" source="userinterface.systemadminworkarea.ManageEnterpriseJPanel" target="business.EcoSystem" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="userAccount" source="userinterface.DoctorRole.PlaceOrderJPanel" target="business.useraccount.UserAccount" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="country" source="userinterface.DoctorRole.ExaminePatientJPanel" target="business.geography.Country" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="panel" source="userinterface.systemadminworkarea.ManageCountryJPanel" target="userinterface.systemadminworkarea.SystemAdminWorkAreaJPanel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.organization.LabOrganization" target="business.role.Role" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="receiver" source="business.workqueue.WorkRequest" target="business.useraccount.UserAccount" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.organization.HospitalOrganization" target="business.role.Role" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="city" source="userinterface.DoctorRole.DoctorWorkAreaJPanel" target="business.geography.City" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.role.PatientRole" target="business.useraccount.UserAccount" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="employeeDirectory" source="business.employee.EmployeeDirectory" target="business.employee.Employee" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Employee&gt;"/>
+    <UseRelation source="business.role.Role" target="business.useraccount.UserAccount" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="business.role.LabRole" target="business.role.Role"/>
+    <HasRelation name="enterprise" source="userinterface.administrativeRole.ManageUserAccountJPanel" target="business.enterprise.Enterprise" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="userAccountDirectory" source="business.useraccount.UserAccountDirectory" target="business.useraccount.UserAccount" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;UserAccount&gt;"/>
+    <HasRelation name="role" source="business.useraccount.UserAccount" target="business.role.Role" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="country" source="business.workqueue.ComplaintWorkRequest" target="business.geography.Country" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="governmentOrganizationDirectory" source="business.organization.OrganizationDirectory" target="business.organization.Organization" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Organization&gt;"/>
+    <UseRelation source="business.enterprise.EnterpriseDirectory" target="business.enterprise.Enterprise" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.enterprise.GovernmentEnterprise" target="business.role.Role" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.role.AdminRole" target="business.useraccount.UserAccount" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="business.role.DoctorRole" target="business.role.Role"/>
+    <UseRelation source="business.role.PersonRole" target="business.useraccount.UserAccount" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="labworklist" source="business.workqueue.LabOrderWorkList" target="business.workqueue.LabOrderWorkRequest" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;LabOrderWorkRequest&gt;"/>
+    <HasRelation name="main" source="business.datageneration.CityIndicators" target="business.datageneration.Main" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.workqueue.WorkRequest" target="business.useraccount.UserAccount" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.role.DoctorRole" target="business.useraccount.UserAccount" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cityList" source="business.geography.State" target="business.geography.City" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;City&gt;"/>
+    <UseRelation source="business.EcoSystem" target="business.EcoSystem" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="city" source="userinterface.DoctorRole.ExaminePatientJPanel" target="business.geography.City" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.enterprise.Enterprise" target="business.organization.OrganizationDirectory" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.DB4OUtil.DB4OUtil" target="business.DB4OUtil.DB4OUtil" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.workqueue.LabOrderWorkRequest" target="business.geography.City" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="business.role.AdminRole" target="business.role.Role"/>
+    <IsRelation name="is" source="business.role.SystemAdminRole" target="business.role.Role"/>
+    <HasRelation name="organizationDirectory" source="business.enterprise.Enterprise" target="business.organization.OrganizationDirectory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="enterprise" source="userinterface.DoctorRole.DoctorWorkAreaJPanel" target="business.enterprise.Enterprise" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="employee" source="business.useraccount.UserAccount" target="business.employee.Employee" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="state" source="business.workqueue.ComplaintWorkRequest" target="business.geography.State" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="country" source="business.workqueue.LabOrderWorkRequest" target="business.geography.Country" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="userAccount" source="userinterface.labRole.LabpersonWorkAreaJPanel" target="business.useraccount.UserAccount" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="enterprise" source="userinterface.DoctorRole.PlaceOrderJPanel" target="business.enterprise.Enterprise" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.DB4OUtil.DB4OUtil" target="business.EcoSystem" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="ecoSystem" source="business.EcoSystem" target="business.EcoSystem" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="ecoSystem" source="userinterface.personrole.PersonWorkAreaJPanel" target="business.EcoSystem" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="enterpriseDirectory" source="business.enterprise.EnterpriseDirectory" target="business.enterprise.Enterprise" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Enterprise&gt;"/>
+    <HasRelation name="workQueue" source="business.useraccount.UserAccount" target="business.workqueue.WorkQueue" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="WorkQueue"/>
+    <IsRelation name="is" source="business.EcoSystem" target="business.organization.Organization"/>
+    <HasRelation name="enterprise" source="userinterface.personrole.PersonWorkAreaJPanel" target="business.enterprise.Enterprise" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.useraccount.UserAccountDirectory" target="business.useraccount.UserAccount" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="business.workqueue.ComplaintWorkRequest" target="business.workqueue.WorkRequest"/>
+    <HasRelation name="workQueue" source="business.organization.Organization" target="business.workqueue.WorkQueue" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="WorkQueue"/>
+    <IsRelation name="is" source="business.enterprise.GovernmentEnterprise" target="business.enterprise.Enterprise"/>
+    <UseRelation source="business.geography.Country" target="business.enterprise.EnterpriseDirectory" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="city" source="business.workqueue.ComplaintWorkRequest" target="business.geography.City" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="business.workqueue.LabOrderWorkRequest" target="business.workqueue.WorkRequest"/>
+    <IsRelation name="is" source="business.organization.LabOrganization" target="business.organization.Organization"/>
+    <UseRelation source="business.role.SystemAdminRole" target="business.useraccount.UserAccount" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="state" source="business.workqueue.LabOrderWorkRequest" target="business.geography.State" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.EcoSystem" target="business.geography.Country" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.EcoSystem" target="business.role.Role" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.organization.Organization" target="business.workqueue.WorkQueue" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="city" source="business.workqueue.LabOrderWorkRequest" target="business.geography.City" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="sender" source="business.workqueue.WorkRequest" target="business.useraccount.UserAccount" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="city" source="userinterface.DoctorRole.PlaceOrderJPanel" target="business.geography.City" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="business.workqueue.LabOrderWorkRequest" target="business.geography.Country" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="business.organization.PeopleOrganization" target="business.organization.Organization"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="AED_Assignment3">
+  <ClassDiagramComponents>
+    <Class name="ComputerCollection" package="Business" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="computerList" type="ArrayList&lt;Product&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getComputerList" returnType="ArrayList&lt;Product&gt;" visibility="public"/>
+        <Method name="updateProduct" returnType="Product" visibility="public">
+          <Argument type="String" name="productid"/>
+        </Method>
+        <Method name="setComputerList" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Product&gt;" name="computerList"/>
+        </Method>
+        <Method name="addProduct" returnType="Product" visibility="public"/>
+        <Method name="deleteProduct" returnType="boolean" visibility="public">
+          <Argument type="String" name="productid"/>
+          <Argument type="String" name="productname"/>
+          <Argument type="String" name="productmodel"/>
+        </Method>
+        <Method name="searchProduct" returnType="ArrayList&lt;Product&gt;" visibility="public">
+          <Argument type="String" name="productid"/>
+          <Argument type="String" name="productname"/>
+          <Argument type="String" name="productmodel"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="HardwareCollection" package="Business" visibility="public" xPosition="32.0" yPosition="329.0">
+      <Fields>
+        <Field name="hardwareList" type="ArrayList&lt;Product&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getHardwareList" returnType="ArrayList&lt;Product&gt;" visibility="public"/>
+        <Method name="updateProduct" returnType="Product" visibility="public">
+          <Argument type="String" name="productid"/>
+        </Method>
+        <Method name="setHardwareList" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Product&gt;" name="hardwareList"/>
+        </Method>
+        <Method name="addProduct" returnType="Product" visibility="public"/>
+        <Method name="deleteProduct" returnType="boolean" visibility="public">
+          <Argument type="String" name="productid"/>
+          <Argument type="String" name="productname"/>
+          <Argument type="String" name="productmodel"/>
+        </Method>
+        <Method name="searchProduct" returnType="ArrayList&lt;Product&gt;" visibility="public">
+          <Argument type="String" name="productid"/>
+          <Argument type="String" name="productname"/>
+          <Argument type="String" name="productmodel"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PrinterCollection" package="Business" visibility="public" xPosition="605.0" yPosition="20.0">
+      <Fields>
+        <Field name="printerList" type="ArrayList&lt;Product&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getPrinterList" returnType="ArrayList&lt;Product&gt;" visibility="public"/>
+        <Method name="updateProduct" returnType="Product" visibility="public">
+          <Argument type="String" name="productid"/>
+        </Method>
+        <Method name="setPrinterList" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Product&gt;" name="printerList"/>
+        </Method>
+        <Method name="addProduct" returnType="Product" visibility="public"/>
+        <Method name="deleteProduct" returnType="boolean" visibility="public">
+          <Argument type="String" name="productid"/>
+          <Argument type="String" name="productname"/>
+          <Argument type="String" name="productmodel"/>
+        </Method>
+        <Method name="searchProduct" returnType="ArrayList&lt;Product&gt;" visibility="public">
+          <Argument type="String" name="productid"/>
+          <Argument type="String" name="productname"/>
+          <Argument type="String" name="productmodel"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Product" package="Business" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="pid" type="String" visibility="private"/>
+        <Field name="pname" type="String" visibility="private"/>
+        <Field name="ptype" type="String" visibility="private"/>
+        <Field name="pmodel" type="String" visibility="private"/>
+        <Field name="pmodelid" type="String" visibility="private"/>
+        <Field name="pdescription" type="String" visibility="private"/>
+        <Field name="pvendorname" type="String" visibility="private"/>
+        <Field name="pbaseprice" type="String" visibility="private"/>
+        <Field name="pceilingprice" type="String" visibility="private"/>
+        <Field name="pfloorprice" type="String" visibility="private"/>
+        <Field name="pfeatures" type="String" visibility="private"/>
+        <Field name="pbenefits" type="String" visibility="private"/>
+        <Field name="image" type="ImageIcon" visibility="private"/>
+        <Field name="cselection" type="String" visibility="private"/>
+        <Field name="ctimestamp" type="String" visibility="private"/>
+        <Field name="pvendorid" type="String" visibility="private"/>
+        <Field name="pvendortimestamp" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getPid" returnType="String" visibility="public"/>
+        <Method name="setPid" returnType="void" visibility="public">
+          <Argument type="String" name="pid"/>
+        </Method>
+        <Method name="getPname" returnType="String" visibility="public"/>
+        <Method name="setPname" returnType="void" visibility="public">
+          <Argument type="String" name="pname"/>
+        </Method>
+        <Method name="getPtype" returnType="String" visibility="public"/>
+        <Method name="setPtype" returnType="void" visibility="public">
+          <Argument type="String" name="ptype"/>
+        </Method>
+        <Method name="getPmodel" returnType="String" visibility="public"/>
+        <Method name="setPmodel" returnType="void" visibility="public">
+          <Argument type="String" name="pmodel"/>
+        </Method>
+        <Method name="getPmodelid" returnType="String" visibility="public"/>
+        <Method name="setPmodelid" returnType="void" visibility="public">
+          <Argument type="String" name="pmodelid"/>
+        </Method>
+        <Method name="getPdescription" returnType="String" visibility="public"/>
+        <Method name="setPdescription" returnType="void" visibility="public">
+          <Argument type="String" name="pdescription"/>
+        </Method>
+        <Method name="getPvendorname" returnType="String" visibility="public"/>
+        <Method name="setPvendorname" returnType="void" visibility="public">
+          <Argument type="String" name="pvendorname"/>
+        </Method>
+        <Method name="getPbaseprice" returnType="String" visibility="public"/>
+        <Method name="setPbaseprice" returnType="void" visibility="public">
+          <Argument type="String" name="pbaseprice"/>
+        </Method>
+        <Method name="getPceilingprice" returnType="String" visibility="public"/>
+        <Method name="setPceilingprice" returnType="void" visibility="public">
+          <Argument type="String" name="pceilingprice"/>
+        </Method>
+        <Method name="getPfloorprice" returnType="String" visibility="public"/>
+        <Method name="setPfloorprice" returnType="void" visibility="public">
+          <Argument type="String" name="pfloorprice"/>
+        </Method>
+        <Method name="getPfeatures" returnType="String" visibility="public"/>
+        <Method name="setPfeatures" returnType="void" visibility="public">
+          <Argument type="String" name="pfeatures"/>
+        </Method>
+        <Method name="getPbenefits" returnType="String" visibility="public"/>
+        <Method name="setPbenefits" returnType="void" visibility="public">
+          <Argument type="String" name="pbenefits"/>
+        </Method>
+        <Method name="getImage" returnType="ImageIcon" visibility="public"/>
+        <Method name="setImage" returnType="void" visibility="public">
+          <Argument type="ImageIcon" name="image"/>
+        </Method>
+        <Method name="getCselection" returnType="String" visibility="public"/>
+        <Method name="setCselection" returnType="void" visibility="public">
+          <Argument type="String" name="cselection"/>
+        </Method>
+        <Method name="getCtimestamp" returnType="String" visibility="public"/>
+        <Method name="setCtimestamp" returnType="void" visibility="public">
+          <Argument type="String" name="ctimestamp"/>
+        </Method>
+        <Method name="getPvendorid" returnType="String" visibility="public"/>
+        <Method name="setPvendorid" returnType="void" visibility="public">
+          <Argument type="String" name="pvendorid"/>
+        </Method>
+        <Method name="getPvendortimestamp" returnType="String" visibility="public"/>
+        <Method name="setPvendortimestamp" returnType="void" visibility="public">
+          <Argument type="String" name="pvendortimestamp"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SoftwareCollection" package="Business" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="softwareList" type="ArrayList&lt;Product&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getSoftwareList" returnType="ArrayList&lt;Product&gt;" visibility="public"/>
+        <Method name="updateProduct" returnType="Product" visibility="public">
+          <Argument type="String" name="productid"/>
+        </Method>
+        <Method name="setSoftwareList" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Product&gt;" name="softwareList"/>
+        </Method>
+        <Method name="addProduct" returnType="Product" visibility="public"/>
+        <Method name="deleteProduct" returnType="boolean" visibility="public">
+          <Argument type="String" name="productid"/>
+          <Argument type="String" name="productname"/>
+          <Argument type="String" name="productmodel"/>
+        </Method>
+        <Method name="searchProduct" returnType="ArrayList&lt;Product&gt;" visibility="public">
+          <Argument type="String" name="productid"/>
+          <Argument type="String" name="productname"/>
+          <Argument type="String" name="productmodel"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="printerList" source="Business.PrinterCollection" target="Business.Product" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Product&gt;"/>
+    <UseRelation source="Business.ComputerCollection" target="Business.Product" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="computerCollection" source="UserInterface.VendorWorkareaJPanel" target="Business.ComputerCollection" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="printerCollection" source="UserInterface.VendorWorkareaJPanel" target="Business.PrinterCollection" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="softwareCollection" source="UserInterface.DeleteProductJPanel" target="Business.SoftwareCollection" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="computerCollection" source="UserInterface.CustomerWorkareaJPanel" target="Business.ComputerCollection" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="computerCollection" source="UserInterface.MainJFrame" target="Business.ComputerCollection" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="printerCollection" source="UserInterface.DeleteProductJPanel" target="Business.PrinterCollection" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="printerCollection" source="UserInterface.AddProductJPanel" target="Business.PrinterCollection" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Business.PrinterCollection" target="Business.Product" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="computerCollection" source="UserInterface.VendorViewUpdateProductJPanel" target="Business.ComputerCollection" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="computerList" source="Business.ComputerCollection" target="Business.Product" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Product&gt;"/>
+    <HasRelation name="printerCollection" source="UserInterface.CustomerWorkareaJPanel" target="Business.PrinterCollection" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="hardwareCollection" source="UserInterface.VendorWorkareaJPanel" target="Business.HardwareCollection" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Business.HardwareCollection" target="Business.Product" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Business.SoftwareCollection" target="Business.Product" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="softwareCollection" source="UserInterface.AddProductJPanel" target="Business.SoftwareCollection" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="computerCollection" source="UserInterface.AddProductJPanel" target="Business.ComputerCollection" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="softwareList" source="Business.SoftwareCollection" target="Business.Product" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Product&gt;"/>
+    <HasRelation name="hardwareList" source="Business.HardwareCollection" target="Business.Product" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Product&gt;"/>
+    <HasRelation name="printerCollection" source="UserInterface.MainJFrame" target="Business.PrinterCollection" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="softwareCollection" source="UserInterface.MainJFrame" target="Business.SoftwareCollection" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="softwareCollection" source="UserInterface.CustomerWorkareaJPanel" target="Business.SoftwareCollection" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="hardwareCollection" source="UserInterface.DeleteProductJPanel" target="Business.HardwareCollection" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

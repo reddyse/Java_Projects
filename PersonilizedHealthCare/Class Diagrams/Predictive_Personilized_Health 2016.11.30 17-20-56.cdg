@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Predictive_Personilized_Health">
+  <ClassDiagramComponents>
+    <Class name="EcoSystem" package="Business" visibility="public" xPosition="1288.0" yPosition="10.0">
+      <Fields>
+        <Field name="business" type="EcoSystem" visibility="private" isStatic="true"/>
+        <Field name="networkList" type="ArrayList&lt;Network&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Person" package="Business.Employee" visibility="public" xPosition="1074.0" yPosition="633.0">
+      <Fields>
+        <Field name="fname" type="String" visibility="private"/>
+        <Field name="lname" type="String" visibility="private"/>
+        <Field name="dob" type="String" visibility="private"/>
+        <Field name="address" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="PersonDirectory" package="Business.Employee" visibility="public" xPosition="1063.0" yPosition="493.0">
+      <Fields>
+        <Field name="employeeList" type="ArrayList&lt;PersonRole&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="MedicalInstitute" package="Business.Enterprise" visibility="public" isAbstract="true" xPosition="1945.0" yPosition="616.0">
+      <Fields>
+        <Field name="enterpriseType" type="EnterpriseType" visibility="private"/>
+        <Field name="organizationDirectory" type="OrganizationDirectory" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="MedicalInstituteDirectory" package="Business.Enterprise" visibility="public" xPosition="1946.0" yPosition="463.0">
+      <Fields>
+        <Field name="enterpriseList" type="ArrayList&lt;MedicalInstitute&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Hospital" package="Business.Enterprise" visibility="public" xPosition="1803.0" yPosition="877.0">
+      <Fields>
+        <Field name="hname" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="dispEHR" returnType="String" visibility="public"/>
+        <Method name="updateEHR" returnType="void" visibility="public"/>
+        <Method name="placeOrder" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="AdminRole" package="Business.Role" visibility="public" xPosition="764.0" yPosition="815.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createWorkArea" returnType="EcoSystem" visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="UserAccount" name="account"/>
+          <Argument type="Organization" name="organization"/>
+          <Argument type="Enterprise" name="enterprise"/>
+          <Argument type="EcoSystem" name="business"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ProviderRole" package="Business.Role" visibility="public" xPosition="517.0" yPosition="493.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createWorkArea" returnType="EcoSystem" visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="UserAccount" name="account"/>
+          <Argument type="Organization" name="organization"/>
+          <Argument type="Enterprise" name="enterprise"/>
+          <Argument type="EcoSystem" name="business"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="LabAssistantRole" package="Business.Role" visibility="public" xPosition="-394.0" yPosition="595.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createWorkArea" returnType="EcoSystem" visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="UserAccount" name="account"/>
+          <Argument type="Organization" name="organization"/>
+          <Argument type="Enterprise" name="enterprise"/>
+          <Argument type="EcoSystem" name="business"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Role" package="Business.Role" visibility="public" isAbstract="true" xPosition="725.0" yPosition="616.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createWorkArea" returnType="EcoSystem" visibility="public" isAbstract="true">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="UserAccount" name="account"/>
+          <Argument type="Organization" name="organization"/>
+          <Argument type="Enterprise" name="enterprise"/>
+          <Argument type="EcoSystem" name="business"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="RegisteredNurse" package="Business.Role" visibility="public" xPosition="-143.0" yPosition="782.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createWorkArea" returnType="EcoSystem" visibility="public">
+          <Argument type="JPanel" name="userProcessContainer"/>
+          <Argument type="UserAccount" name="account"/>
+          <Argument type="Organization" name="organization"/>
+          <Argument type="Enterprise" name="enterprise"/>
+          <Argument type="EcoSystem" name="system"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="City" package="" visibility="public" xPosition="1312.0" yPosition="197.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="County" package="" visibility="public" xPosition="1312.0" yPosition="354.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="VitalSignHistory" package="" visibility="public" xPosition="1074.0" yPosition="815.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Vitals" package="" visibility="public" xPosition="1074.0" yPosition="910.0">
+      <Fields>
+        <Field name="date" type="String" visibility="private"/>
+        <Field name="pulse" type="int" visibility="private"/>
+        <Field name="bp" type="int" visibility="private"/>
+        <Field name="temp" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="FitnessWearables" package="" visibility="public" xPosition="1074.0" yPosition="1093.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Clinic" package="" visibility="public" xPosition="2145.0" yPosition="877.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="placeOrder" returnType="void" visibility="public"/>
+        <Method name="disEHR" returnType="string" visibility="public"/>
+        <Method name="updateEHR" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Lab" package="" visibility="public" xPosition="1974.0" yPosition="806.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="orderResult" returnType="void" visibility="public"/>
+        <Method name="createOrder" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="EHR" package="" visibility="public" xPosition="1974.0" yPosition="1055.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="updateRecord" returnType="void" visibility="public"/>
+        <Method name="createRecord" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="AgencyListDirectory" package="" visibility="public" xPosition="2303.0" yPosition="380.0">
+      <Fields>
+        <Field name="agencylist" type="ArrayList&lt;agency&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Agency" package="" visibility="public" xPosition="2303.0" yPosition="533.0">
+      <Fields>
+        <Field name="name" type="string" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="PlanDirectory" package="" visibility="public" xPosition="2303.0" yPosition="652.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="addPlan" returnType="void" visibility="public"/>
+        <Method name="deletePlan" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Plan" package="" visibility="public" xPosition="2303.0" yPosition="804.0">
+      <Fields>
+        <Field name="cost" type="string" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Indicators" package="" visibility="public" xPosition="1600.0" yPosition="565.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="WeatherReport" package="" visibility="public" xPosition="1455.0" yPosition="732.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="PollutionReport" package="" visibility="public" xPosition="1613.0" yPosition="837.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="RiskReports" package="" visibility="public" xPosition="1694.0" yPosition="723.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="PersonRole" package="" visibility="public" xPosition="793.0" yPosition="482.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="AgentRole" package="" visibility="public" xPosition="621.0" yPosition="825.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="CityOfficialRole" package="" visibility="public" xPosition="449.0" yPosition="633.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="craeteData" returnType="void" visibility="public"/>
+        <Method name="updateData" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="has" source="Business.Employee.Person" target="Business.Role.Role" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <IsRelation name="is" source="Clinic" target="Business.Enterprise.MedicalInstitute"/>
+    <IsRelation name="is" source="Business.Role.AdminRole" target="Business.Role.Role"/>
+    <HasRelation name="business" source="Business.EcoSystem" target="Business.EcoSystem" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="has" source="Agency" target="PlanDirectory" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="has" source="PlanDirectory" target="Plan" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="has" source="Clinic" target="EHR" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="CityOfficialRole" target="Business.Role.Role"/>
+    <HasRelation name="userAccountDirectory" source="Business.Organization.Organization" target="Business.UserAccount.UserAccountDirectory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="PersonRole" target="Business.Role.Role"/>
+    <HasRelation name="has" source="VitalSignHistory" target="Vitals" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="has" source="County" target="AgencyListDirectory" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Business.Role.ProviderRole" target="Business.Role.Role"/>
+    <HasRelation name="workQueue" source="Business.Organization.Organization" target="Business.WorkQueue.WorkQueue" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="WorkQueue"/>
+    <HasRelation name="enterpriseList" source="Business.Enterprise.MedicalInstituteDirectory" target="Business.Enterprise.MedicalInstitute" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Enterprise&gt;"/>
+    <HasRelation name="employeeList" source="Business.Employee.PersonDirectory" target="Business.Employee.Person" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Employee&gt;"/>
+    <HasRelation name="has" source="Business.Employee.Person" target="VitalSignHistory" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="role" source="Business.UserAccount.UserAccount" target="Business.Role.Role" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="has" source="County" target="Business.Enterprise.MedicalInstituteDirectory" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="employee" source="Business.UserAccount.UserAccount" target="Business.Employee.Person" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="employeeDirectory" source="Business.Organization.Organization" target="Business.Employee.PersonDirectory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="has" source="AgencyListDirectory" target="Agency" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="organizationDirectory" source="Business.Enterprise.MedicalInstitute" target="Business.Organization.OrganizationDirectory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="has" source="Indicators" target="RiskReports" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Lab" target="Business.Enterprise.MedicalInstitute"/>
+    <HasRelation name="has" source="Indicators" target="WeatherReport" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="HAS" source="Vitals" target="FitnessWearables" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <IsRelation name="is" source="AgentRole" target="Business.Role.Role"/>
+    <IsRelation name="is" source="Business.Role.RegisteredNurse" target="Business.Role.Role"/>
+    <HasRelation name="has" source="County" target="Business.Employee.PersonDirectory" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="has" source="Business.EcoSystem" target="City" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="has" source="Indicators" target="PollutionReport" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Business.Enterprise.Hospital" target="Business.Enterprise.MedicalInstitute"/>
+    <HasRelation name="workRequestList" source="Business.WorkQueue.WorkQueue" target="Business.WorkQueue.WorkRequest" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;WorkRequest&gt;"/>
+    <HasRelation name="has" source="County" target="Indicators" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="has" source="Business.Enterprise.Hospital" target="EHR" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="has" source="Lab" target="EHR" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Business.Enterprise.MedicalInstitute" target="Business.Organization.Organization"/>
+    <HasRelation name="has" source="City" target="County" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

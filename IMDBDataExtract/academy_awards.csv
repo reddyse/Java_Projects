@@ -1,0 +1,877 @@
+AwardID,Awards,Year,Category,MovieID,RoleID
+1,Oscars,2010,Actor -- Leading Role,,108
+2,Oscars,2010,Actor -- Supporting Role,,108
+3,Oscars,2010,Actress -- Leading Role,,108
+4,Oscars,2010,Actress -- Supporting Role,,108
+5,Oscars,2010,Animated Feature Film,,87
+6,Oscars,2010,Art Direction,,87
+7,Oscars,2010,Cinematography,,65
+8,Oscars,2010,Costume Design,,4
+9,Oscars,2010,Directing,,87
+10,Oscars,2010,Documentary (Feature),,1
+11,Oscars,2010,Documentary (Short Subject),,1
+12,Oscars,2010,Film Editing,,21
+13,Oscars,2010,Foreign Language Film,,2
+14,Oscars,2010,Makeup,,109
+15,Oscars,2010,Music (Scoring),,10
+16,Oscars,2010,Music (Song),,10
+17,Oscars,2010,Best Picture,,2
+18,Oscars,2010,Short Film (Animated),,109
+19,Oscars,2010,Short Film (Live Action),,109
+20,Oscars,2010,Sound,,30
+21,Oscars,2010,Sound Editing,,30
+22,Oscars,2010,Visual Effects,,36
+23,Oscars,2010,Writing,,19
+24,Oscars,2010,Writing,,19
+25,Oscars,2010,Honorary Award,,109
+26,Oscars,2010,Honorary Award,,109
+27,Oscars,2010,Honorary Award,,109
+28,Oscars,2010,Irving G. Thalberg Memorial Award,,109
+29,Oscars,2010,Scientific and Technical (Scientific and Engineering Award),,109
+30,Oscars,2010,Scientific and Technical (Scientific and Engineering Award),,109
+31,Oscars,2010,Scientific and Technical (Scientific and Engineering Award),,109
+32,Oscars,2010,Scientific and Technical (Scientific and Engineering Award),,109
+33,Oscars,2010,Scientific and Technical (Technical Achievement Award),,109
+34,Oscars,2010,Scientific and Technical (Technical Achievement Award),,109
+35,Oscars,2010,Scientific and Technical (Technical Achievement Award),,109
+36,Oscars,2010,Scientific and Technical (Technical Achievement Award),,109
+37,Oscars,2010,Scientific and Technical (Technical Achievement Award),,109
+38,Oscars,2010,Scientific and Technical (Bonner Medal),,109
+39,Oscars,2009,Actor -- Leading Role,,108
+40,Oscars,2009,Actor -- Supporting Role,,108
+41,Oscars,2009,Actress -- Leading Role,,108
+42,Oscars,2009,Actress -- Supporting Role,,108
+43,Oscars,2009,Animated Feature Film,,87
+44,Oscars,2009,Art Direction,,87
+45,Oscars,2009,Cinematography,,65
+46,Oscars,2009,Costume Design,,4
+47,Oscars,2009,Directing,,87
+48,Oscars,2009,Documentary (Feature),,1
+49,Oscars,2009,Documentary (Short Subject),,1
+50,Oscars,2009,Film Editing,,21
+51,Oscars,2009,Foreign Language Film,,2
+52,Oscars,2009,Makeup,,109
+53,Oscars,2009,Music (Scoring),,10
+54,Oscars,2009,Music (Song),,10
+55,Oscars,2009,Best Picture,,2
+56,Oscars,2009,Short Film (Animated),,109
+57,Oscars,2009,Short Film (Live Action),,109
+58,Oscars,2009,Sound,,30
+59,Oscars,2009,Sound Editing,,30
+60,Oscars,2009,Visual Effects,,36
+61,Oscars,2009,Writing,,19
+62,Oscars,2009,Writing,,19
+63,Oscars,2009,Honorary Award,,109
+64,Oscars,2009,Honorary Award,,109
+65,Oscars,2009,Honorary Award,,109
+66,Oscars,2009,Irving G. Thalberg Memorial Award,,109
+67,Oscars,2009,Scientific and Technical (Scientific and Engineering Award),,109
+68,Oscars,2009,Scientific and Technical (Scientific and Engineering Award),,109
+69,Oscars,2009,Scientific and Technical (Scientific and Engineering Award),,109
+70,Oscars,2009,Scientific and Technical (Scientific and Engineering Award),,109
+71,Oscars,2009,Scientific and Technical (Scientific and Engineering Award),,109
+72,Oscars,2009,Scientific and Technical (Scientific and Engineering Award),,109
+73,Oscars,2009,Scientific and Technical (Scientific and Engineering Award),,109
+74,Oscars,2009,Scientific and Technical (Scientific and Engineering Award),,109
+75,Oscars,2009,Scientific and Technical (Scientific and Engineering Award),,109
+76,Oscars,2009,Scientific and Technical (Scientific and Engineering Award),,109
+77,Oscars,2009,Scientific and Technical (Technical Achievement Award),,109
+78,Oscars,2009,Scientific and Technical (Technical Achievement Award),,109
+79,Oscars,2009,Scientific and Technical (Technical Achievement Award),,109
+80,Oscars,2009,Scientific and Technical (Technical Achievement Award),,109
+81,Oscars,2009,Scientific and Technical (Technical Achievement Award),,109
+82,Oscars,2008,Actor -- Leading Role,,108
+83,Oscars,2008,Actor -- Supporting Role,,108
+84,Oscars,2008,Actress -- Leading Role,,108
+85,Oscars,2008,Actress -- Supporting Role,,108
+86,Oscars,2008,Animated Feature Film,,87
+87,Oscars,2008,Art Direction,,87
+88,Oscars,2008,Cinematography,,65
+89,Oscars,2008,Costume Design,,4
+90,Oscars,2008,Directing,,87
+91,Oscars,2008,Documentary (Feature),,1
+92,Oscars,2008,Documentary (Short Subject),,1
+93,Oscars,2008,Film Editing,,21
+94,Oscars,2008,Foreign Language Film,,2
+95,Oscars,2008,Makeup,,109
+96,Oscars,2008,Music (Scoring),,10
+97,Oscars,2008,Music (Song),,10
+98,Oscars,2008,Best Picture,,2
+99,Oscars,2008,Short Film (Animated),,109
+100,Oscars,2008,Short Film (Live Action),,109
+101,Oscars,2008,Sound,,30
+102,Oscars,2008,Sound Editing,,30
+103,Oscars,2008,Visual Effects,,36
+104,Oscars,2008,Writing,,19
+105,Oscars,2008,Writing,,19
+106,Oscars,2008,Jean Hersholt Humanitarian Award,,109
+107,Oscars,2008,Scientific and Technical (Scientific and Engineering Award),,109
+108,Oscars,2008,Scientific and Technical (Scientific and Engineering Award),,109
+109,Oscars,2008,Scientific and Technical (Scientific and Engineering Award),,109
+110,Oscars,2008,Scientific and Technical (Technical Achievement Award),,109
+111,Oscars,2008,Scientific and Technical (Gordon E. Sawyer Award),,109
+112,Oscars,2008,Scientific and Technical (Bonner Medal),,109
+113,Oscars,2007,Actor -- Leading Role,,108
+114,Oscars,2007,Actor -- Supporting Role,,108
+115,Oscars,2007,Actress -- Leading Role,,108
+116,Oscars,2007,Actress -- Supporting Role,,108
+117,Oscars,2007,Animated Feature Film,,87
+118,Oscars,2007,Art Direction,,87
+119,Oscars,2007,Cinematography,,65
+120,Oscars,2007,Costume Design,,4
+121,Oscars,2007,Directing,,87
+122,Oscars,2007,Documentary (Feature),,1
+123,Oscars,2007,Documentary (Short Subject),,1
+124,Oscars,2007,Film Editing,,21
+125,Oscars,2007,Foreign Language Film,,2
+126,Oscars,2007,Makeup,,109
+127,Oscars,2007,Music (Scoring),,10
+128,Oscars,2007,Music (Song),,10
+129,Oscars,2007,Best Picture,,2
+130,Oscars,2007,Short Film (Animated),,109
+131,Oscars,2007,Short Film (Live Action),,109
+132,Oscars,2007,Sound,,30
+133,Oscars,2007,Sound Editing,,30
+134,Oscars,2007,Visual Effects,,36
+135,Oscars,2007,Writing,,19
+136,Oscars,2007,Writing,,19
+137,Oscars,2007,Honorary Award,,109
+138,Oscars,2007,Scientific and Technical (Academy Award of Merit),,109
+139,Oscars,2007,Scientific and Technical (Scientific and Engineering Award),,109
+140,Oscars,2007,Scientific and Technical (Scientific and Engineering Award),,109
+141,Oscars,2007,Scientific and Technical (Technical Achievement Award),,109
+142,Oscars,2007,Scientific and Technical (Technical Achievement Award),,109
+143,Oscars,2007,Scientific and Technical (Technical Achievement Award),,109
+144,Oscars,2007,Scientific and Technical (Technical Achievement Award),,109
+145,Oscars,2007,Scientific and Technical (Technical Achievement Award),,109
+146,Oscars,2007,Scientific and Technical (Gordon E. Sawyer Award),,109
+147,Oscars,2007,Scientific and Technical (Bonner Medal),,109
+148,Oscars,2007,Scientific and Technical (Special Awards),,109
+149,Oscars,2006,Actor -- Leading Role,,108
+150,Oscars,2006,Actor -- Supporting Role,,108
+151,Oscars,2006,Actress -- Leading Role,,108
+152,Oscars,2006,Actress -- Supporting Role,,108
+153,Oscars,2006,Animated Feature Film,,87
+154,Oscars,2006,Art Direction,,87
+155,Oscars,2006,Cinematography,,65
+156,Oscars,2006,Costume Design,,4
+157,Oscars,2006,Directing,,87
+158,Oscars,2006,Documentary (Feature),,1
+159,Oscars,2006,Documentary (Short Subject),,1
+160,Oscars,2006,Film Editing,,21
+161,Oscars,2006,Foreign Language Film,,2
+162,Oscars,2006,Makeup,,109
+163,Oscars,2006,Music (Scoring),,10
+164,Oscars,2006,Music (Song),,10
+165,Oscars,2006,Best Picture,,2
+166,Oscars,2006,Short Film (Animated),,109
+167,Oscars,2006,Short Film (Live Action),,109
+168,Oscars,2006,Sound,,30
+169,Oscars,2006,Sound Editing,,30
+170,Oscars,2006,Visual Effects,,36
+171,Oscars,2006,Writing,,19
+172,Oscars,2006,Writing,,19
+173,Oscars,2006,Honorary Award,,109
+174,Oscars,2006,Jean Hersholt Humanitarian Award,,109
+175,Oscars,2006,Scientific and Technical (Scientific and Engineering Award),,109
+176,Oscars,2006,Scientific and Technical (Scientific and Engineering Award),,109
+177,Oscars,2006,Scientific and Technical (Scientific and Engineering Award),,109
+178,Oscars,2006,Scientific and Technical (Scientific and Engineering Award),,109
+179,Oscars,2006,Scientific and Technical (Technical Achievement Award),,109
+180,Oscars,2006,Scientific and Technical (Technical Achievement Award),,109
+181,Oscars,2006,Scientific and Technical (Technical Achievement Award),,109
+182,Oscars,2006,Scientific and Technical (Technical Achievement Award),,109
+183,Oscars,2006,Scientific and Technical (Technical Achievement Award),,109
+184,Oscars,2006,Scientific and Technical (Technical Achievement Award),,109
+185,Oscars,2006,Scientific and Technical (Technical Achievement Award),,109
+186,Oscars,2006,Scientific and Technical (Technical Achievement Award),,109
+187,Oscars,2006,Scientific and Technical (Gordon E. Sawyer Award),,109
+188,Oscars,2006,Scientific and Technical (Bonner Medal),,109
+189,Oscars,2006,Scientific and Technical (Special Awards),,109
+190,Oscars,2005,Actor -- Leading Role,,108
+191,Oscars,2005,Actor -- Supporting Role,,108
+192,Oscars,2005,Actress -- Leading Role,,108
+193,Oscars,2005,Actress -- Supporting Role,,108
+194,Oscars,2005,Animated Feature Film,,87
+195,Oscars,2005,Art Direction,,87
+196,Oscars,2005,Cinematography,,65
+197,Oscars,2005,Costume Design,,4
+198,Oscars,2005,Directing,,87
+199,Oscars,2005,Documentary (Feature),,1
+200,Oscars,2005,Documentary (Short Subject),,1
+201,Oscars,2005,Film Editing,,21
+202,Oscars,2005,Foreign Language Film,,2
+203,Oscars,2005,Makeup,,109
+204,Oscars,2005,Music (Scoring),,10
+205,Oscars,2005,Music (Song),,10
+206,Oscars,2005,Best Picture,,2
+207,Oscars,2005,Short Film (Animated),,109
+208,Oscars,2005,Short Film (Live Action),,109
+209,Oscars,2005,Sound,,30
+210,Oscars,2005,Sound Editing,,30
+211,Oscars,2005,Visual Effects,,36
+212,Oscars,2005,Writing,,19
+213,Oscars,2005,Writing,,19
+214,Oscars,2005,Honorary Award,,109
+215,Oscars,2005,Scientific and Technical (Scientific and Engineering Award),,109
+216,Oscars,2005,Scientific and Technical (Scientific and Engineering Award),,109
+217,Oscars,2005,Scientific and Technical (Scientific and Engineering Award),,109
+218,Oscars,2005,Scientific and Technical (Scientific and Engineering Award),,109
+219,Oscars,2005,Scientific and Technical (Scientific and Engineering Award),,109
+220,Oscars,2005,Scientific and Technical (Technical Achievement Award),,109
+221,Oscars,2005,Scientific and Technical (Technical Achievement Award),,109
+222,Oscars,2005,Scientific and Technical (Technical Achievement Award),,109
+223,Oscars,2005,Scientific and Technical (Technical Achievement Award),,109
+224,Oscars,2005,Scientific and Technical (Technical Achievement Award),,109
+225,Oscars,2005,Scientific and Technical (Technical Achievement Award),,109
+226,Oscars,2005,Scientific and Technical (Technical Achievement Award),,109
+227,Oscars,2005,Scientific and Technical (Technical Achievement Award),,109
+228,Oscars,2005,Scientific and Technical (Technical Achievement Award),,109
+229,Oscars,2005,Scientific and Technical (Technical Achievement Award),,109
+230,Oscars,2005,Scientific and Technical (Gordon E. Sawyer Award),,109
+231,Oscars,2005,Scientific and Technical (Bonner Medal),,109
+232,Oscars,2004,Actor -- Leading Role,,108
+233,Oscars,2004,Actor -- Supporting Role,,108
+234,Oscars,2004,Actress -- Leading Role,,108
+235,Oscars,2004,Actress -- Supporting Role,,108
+236,Oscars,2004,Animated Feature Film,,87
+237,Oscars,2004,Art Direction,,87
+238,Oscars,2004,Cinematography,,65
+239,Oscars,2004,Costume Design,,4
+240,Oscars,2004,Directing,,87
+241,Oscars,2004,Documentary (Feature),,1
+242,Oscars,2004,Documentary (Short Subject),,1
+243,Oscars,2004,Film Editing,,21
+244,Oscars,2004,Foreign Language Film,,2
+245,Oscars,2004,Makeup,,109
+246,Oscars,2004,Music (Scoring),,10
+247,Oscars,2004,Music (Song),,10
+248,Oscars,2004,Best Picture,,2
+249,Oscars,2004,Short Film (Animated),,109
+250,Oscars,2004,Short Film (Live Action),,109
+251,Oscars,2004,Sound,,30
+252,Oscars,2004,Sound Editing,,30
+253,Oscars,2004,Visual Effects,,36
+254,Oscars,2004,Writing,,19
+255,Oscars,2004,Writing,,19
+256,Oscars,2004,Honorary Award,,109
+257,Oscars,2004,Jean Hersholt Humanitarian Award,,109
+258,Oscars,2004,Scientific and Technical (Academy Award of Merit),,109
+259,Oscars,2004,Scientific and Technical (Academy Award of Merit),,109
+260,Oscars,2004,Scientific and Technical (Scientific and Engineering Award),,109
+261,Oscars,2004,Scientific and Technical (Scientific and Engineering Award),,109
+262,Oscars,2004,Scientific and Technical (Technical Achievement Award),,109
+263,Oscars,2004,Scientific and Technical (Technical Achievement Award),,109
+264,Oscars,2004,Scientific and Technical (Technical Achievement Award),,109
+265,Oscars,2004,Scientific and Technical (Technical Achievement Award),,109
+266,Oscars,2004,Scientific and Technical (Technical Achievement Award),,109
+267,Oscars,2004,Scientific and Technical (Technical Achievement Award),,109
+268,Oscars,2004,Scientific and Technical (Technical Achievement Award),,109
+269,Oscars,2004,Scientific and Technical (Technical Achievement Award),,109
+270,Oscars,2004,Scientific and Technical (Gordon E. Sawyer Award),,109
+271,Oscars,2004,Scientific and Technical (Special Awards),,109
+272,Oscars,2003,Actor -- Leading Role,,108
+273,Oscars,2003,Actor -- Supporting Role,,108
+274,Oscars,2003,Actress -- Leading Role,,108
+275,Oscars,2003,Actress -- Supporting Role,,108
+276,Oscars,2003,Animated Feature Film,,87
+277,Oscars,2003,Art Direction,,87
+278,Oscars,2003,Cinematography,,65
+279,Oscars,2003,Costume Design,,4
+280,Oscars,2003,Directing,,87
+281,Oscars,2003,Documentary (Feature),,1
+282,Oscars,2003,Documentary (Short Subject),,1
+283,Oscars,2003,Film Editing,,21
+284,Oscars,2003,Foreign Language Film,,2
+285,Oscars,2003,Makeup,,109
+286,Oscars,2003,Music (Scoring),,10
+287,Oscars,2003,Music (Song),,10
+288,Oscars,2003,Best Picture,,2
+289,Oscars,2003,Short Film (Animated),,109
+290,Oscars,2003,Short Film (Live Action),,109
+291,Oscars,2003,Sound,,30
+292,Oscars,2003,Sound Editing,,30
+293,Oscars,2003,Visual Effects,,36
+294,Oscars,2003,Writing,,19
+295,Oscars,2003,Writing,,19
+296,Oscars,2003,Honorary Award,,109
+297,Oscars,2003,Scientific and Technical (Academy Award of Merit),,109
+298,Oscars,2003,Scientific and Technical (Academy Award of Merit),,109
+299,Oscars,2003,Scientific and Technical (Scientific and Engineering Award),,109
+300,Oscars,2003,Scientific and Technical (Scientific and Engineering Award),,109
+301,Oscars,2003,Scientific and Technical (Scientific and Engineering Award),,109
+302,Oscars,2003,Scientific and Technical (Technical Achievement Award),,109
+303,Oscars,2003,Scientific and Technical (Technical Achievement Award),,109
+304,Oscars,2003,Scientific and Technical (Technical Achievement Award),,109
+305,Oscars,2003,Scientific and Technical (Gordon E. Sawyer Award),,109
+306,Oscars,2003,Scientific and Technical (Bonner Medal),,109
+307,Oscars,2002,Actor -- Leading Role,,108
+308,Oscars,2002,Actor -- Supporting Role,,108
+309,Oscars,2002,Actress -- Leading Role,,108
+310,Oscars,2002,Actress -- Supporting Role,,108
+311,Oscars,2002,Animated Feature Film,,87
+312,Oscars,2002,Art Direction,,87
+313,Oscars,2002,Cinematography,,65
+314,Oscars,2002,Costume Design,,4
+315,Oscars,2002,Directing,,87
+316,Oscars,2002,Documentary (Feature),,1
+317,Oscars,2002,Documentary (Short Subject),,1
+318,Oscars,2002,Film Editing,,21
+319,Oscars,2002,Foreign Language Film,,2
+320,Oscars,2002,Makeup,,109
+321,Oscars,2002,Music (Scoring),,10
+322,Oscars,2002,Music (Song),,10
+323,Oscars,2002,Best Picture,,2
+324,Oscars,2002,Short Film (Animated),,109
+325,Oscars,2002,Short Film (Live Action),,109
+326,Oscars,2002,Sound,,30
+327,Oscars,2002,Sound Editing,,30
+328,Oscars,2002,Visual Effects,,36
+329,Oscars,2002,Writing,,19
+330,Oscars,2002,Writing,,19
+331,Oscars,2002,Honorary Award,,109
+332,Oscars,2002,Scientific and Technical (Academy Award of Merit),,109
+333,Oscars,2002,Scientific and Technical (Academy Award of Merit),,109
+334,Oscars,2002,Scientific and Technical (Scientific and Engineering Award),,109
+335,Oscars,2002,Scientific and Technical (Scientific and Engineering Award),,109
+336,Oscars,2002,Scientific and Technical (Scientific and Engineering Award),,109
+337,Oscars,2002,Scientific and Technical (Scientific and Engineering Award),,109
+338,Oscars,2002,Scientific and Technical (Technical Achievement Award),,109
+339,Oscars,2002,Scientific and Technical (Technical Achievement Award),,109
+340,Oscars,2002,Scientific and Technical (Technical Achievement Award),,109
+341,Oscars,2002,Scientific and Technical (Technical Achievement Award),,109
+342,Oscars,2002,Scientific and Technical (Technical Achievement Award),,109
+343,Oscars,2002,Scientific and Technical (Technical Achievement Award),,109
+344,Oscars,2002,Scientific and Technical (Bonner Medal),,109
+345,Oscars,2002,Scientific and Technical (Bonner Medal),,109
+346,Oscars,2001,Actor -- Leading Role,,108
+347,Oscars,2001,Actor -- Supporting Role,,108
+348,Oscars,2001,Actress -- Leading Role,,108
+349,Oscars,2001,Actress -- Supporting Role,,108
+350,Oscars,2001,Animated Feature Film,,87
+351,Oscars,2001,Art Direction,,87
+352,Oscars,2001,Cinematography,,65
+353,Oscars,2001,Costume Design,,4
+354,Oscars,2001,Directing,,87
+355,Oscars,2001,Documentary (Feature),,1
+356,Oscars,2001,Documentary (Short Subject),,1
+357,Oscars,2001,Film Editing,,21
+358,Oscars,2001,Foreign Language Film,,2
+359,Oscars,2001,Makeup,,109
+360,Oscars,2001,Music (Scoring),,10
+361,Oscars,2001,Music (Song),,10
+362,Oscars,2001,Best Picture,,2
+363,Oscars,2001,Short Film (Animated),,109
+364,Oscars,2001,Short Film (Live Action),,109
+365,Oscars,2001,Sound,,30
+366,Oscars,2001,Sound Editing,,30
+367,Oscars,2001,Visual Effects,,36
+368,Oscars,2001,Writing,,19
+369,Oscars,2001,Writing,,19
+370,Oscars,2001,Honorary Award,,109
+371,Oscars,2001,Honorary Award,,109
+372,Oscars,2001,Jean Hersholt Humanitarian Award,,109
+373,Oscars,2001,Scientific and Technical (Scientific and Engineering Award),,109
+374,Oscars,2001,Scientific and Technical (Scientific and Engineering Award),,109
+375,Oscars,2001,Scientific and Technical (Scientific and Engineering Award),,109
+376,Oscars,2001,Scientific and Technical (Scientific and Engineering Award),,109
+377,Oscars,2001,Scientific and Technical (Scientific and Engineering Award),,109
+378,Oscars,2001,Scientific and Technical (Scientific and Engineering Award),,109
+379,Oscars,2001,Scientific and Technical (Technical Achievement Award),,109
+380,Oscars,2001,Scientific and Technical (Technical Achievement Award),,109
+381,Oscars,2001,Scientific and Technical (Technical Achievement Award),,109
+382,Oscars,2001,Scientific and Technical (Technical Achievement Award),,109
+383,Oscars,2001,Scientific and Technical (Technical Achievement Award),,109
+384,Oscars,2001,Scientific and Technical (Technical Achievement Award),,109
+385,Oscars,2001,Scientific and Technical (Technical Achievement Award),,109
+386,Oscars,2001,Scientific and Technical (Technical Achievement Award),,109
+387,Oscars,2001,Scientific and Technical (Technical Achievement Award),,109
+388,Oscars,2001,Scientific and Technical (Technical Achievement Award),,109
+389,Oscars,2001,Scientific and Technical (Technical Achievement Award),,109
+390,Oscars,2001,Scientific and Technical (Gordon E. Sawyer Award),,109
+391,Oscars,2001,Scientific and Technical (Bonner Medal),,109
+392,Oscars,2001,Scientific and Technical (Special Awards),,109
+393,Oscars,2000,Actor -- Leading Role,,108
+394,Oscars,2000,Actor -- Supporting Role,,108
+395,Oscars,2000,Actress -- Leading Role,,108
+396,Oscars,2000,Actress -- Supporting Role,,108
+397,Oscars,2000,Art Direction,,87
+398,Oscars,2000,Cinematography,,65
+399,Oscars,2000,Costume Design,,4
+400,Oscars,2000,Directing,,87
+401,Oscars,2000,Documentary (Feature),,1
+402,Oscars,2000,Documentary (Short Subject),,1
+403,Oscars,2000,Film Editing,,21
+404,Oscars,2000,Foreign Language Film,,2
+405,Oscars,2000,Makeup,,109
+406,Oscars,2000,Music (Scoring),,10
+407,Oscars,2000,Music (Song),,10
+408,Oscars,2000,Best Picture,,2
+409,Oscars,2000,Short Film (Animated),,109
+410,Oscars,2000,Short Film (Live Action),,109
+411,Oscars,2000,Sound,,30
+412,Oscars,2000,Sound Editing,,30
+413,Oscars,2000,Visual Effects,,36
+414,Oscars,2000,Writing,,19
+415,Oscars,2000,Writing,,19
+416,Oscars,2000,Honorary Award,,109
+417,Oscars,2000,Honorary Award,,109
+418,Oscars,2000,Irving G. Thalberg Memorial Award,,109
+419,Oscars,2000,Scientific and Technical (Academy Award of Merit),,109
+420,Oscars,2000,Scientific and Technical (Scientific and Engineering Award),,109
+421,Oscars,2000,Scientific and Technical (Scientific and Engineering Award),,109
+422,Oscars,2000,Scientific and Technical (Scientific and Engineering Award),,109
+423,Oscars,2000,Scientific and Technical (Scientific and Engineering Award),,109
+424,Oscars,2000,Scientific and Technical (Scientific and Engineering Award),,109
+425,Oscars,2000,Scientific and Technical (Scientific and Engineering Award),,109
+426,Oscars,2000,Scientific and Technical (Scientific and Engineering Award),,109
+427,Oscars,2000,Scientific and Technical (Technical Achievement Award),,109
+428,Oscars,2000,Scientific and Technical (Technical Achievement Award),,109
+429,Oscars,2000,Scientific and Technical (Technical Achievement Award),,109
+430,Oscars,2000,Scientific and Technical (Technical Achievement Award),,109
+431,Oscars,2000,Scientific and Technical (Technical Achievement Award),,109
+432,Oscars,2000,Scientific and Technical (Technical Achievement Award),,109
+433,Oscars,2000,Scientific and Technical (Technical Achievement Award),,109
+434,Oscars,2000,Scientific and Technical (Technical Achievement Award),,109
+435,Oscars,2000,Scientific and Technical (Technical Achievement Award),,109
+436,Oscars,2000,Scientific and Technical (Gordon E. Sawyer Award),,109
+437,Oscars,2000,Scientific and Technical (Bonner Medal),,109
+438,Oscars,2000,Scientific and Technical (Special Awards),,109
+439,Golden Globe,2010,Actor -- Leading Role,,108
+440,Golden Globe,2010,Actor -- Supporting Role,,108
+441,Golden Globe,2010,Actress -- Leading Role,,108
+442,Golden Globe,2010,Actress -- Supporting Role,,108
+443,Golden Globe,2010,Animated Feature Film,,87
+444,Golden Globe,2010,Art Direction,,87
+445,Golden Globe,2010,Cinematography,,65
+446,Golden Globe,2010,Costume Design,,4
+447,Golden Globe,2010,Directing,,87
+448,Golden Globe,2010,Documentary (Feature),,1
+449,Golden Globe,2010,Documentary (Short Subject),,1
+450,Golden Globe,2010,Film Editing,,21
+451,Golden Globe,2010,Foreign Language Film,,2
+452,Golden Globe,2010,Makeup,,109
+453,Golden Globe,2010,Music (Scoring),,10
+454,Golden Globe,2010,Music (Song),,10
+455,Golden Globe,2010,Best Picture,,2
+456,Golden Globe,2010,Short Film (Animated),,109
+457,Golden Globe,2010,Short Film (Live Action),,109
+458,Golden Globe,2010,Sound,,30
+459,Golden Globe,2010,Sound Editing,,30
+460,Golden Globe,2010,Visual Effects,,36
+461,Golden Globe,2010,Writing,,19
+462,Golden Globe,2010,Writing,,19
+463,Golden Globe,2010,Honorary Award,,109
+464,Golden Globe,2010,Honorary Award,,109
+465,Golden Globe,2010,Honorary Award,,109
+466,Golden Globe,2010,Irving G. Thalberg Memorial Award,,109
+467,Golden Globe,2010,Scientific and Technical (Scientific and Engineering Award),,109
+468,Golden Globe,2010,Scientific and Technical (Scientific and Engineering Award),,109
+469,Golden Globe,2010,Scientific and Technical (Scientific and Engineering Award),,109
+470,Golden Globe,2010,Scientific and Technical (Scientific and Engineering Award),,109
+471,Golden Globe,2010,Scientific and Technical (Technical Achievement Award),,109
+472,Golden Globe,2010,Scientific and Technical (Technical Achievement Award),,109
+473,Golden Globe,2010,Scientific and Technical (Technical Achievement Award),,109
+474,Golden Globe,2010,Scientific and Technical (Technical Achievement Award),,109
+475,Golden Globe,2010,Scientific and Technical (Technical Achievement Award),,109
+476,Golden Globe,2010,Scientific and Technical (Bonner Medal),,109
+477,Golden Globe,2009,Actor -- Leading Role,,108
+478,Golden Globe,2009,Actor -- Supporting Role,,108
+479,Golden Globe,2009,Actress -- Leading Role,,108
+480,Golden Globe,2009,Actress -- Supporting Role,,108
+481,Golden Globe,2009,Animated Feature Film,,87
+482,Golden Globe,2009,Art Direction,,87
+483,Golden Globe,2009,Cinematography,,65
+484,Golden Globe,2009,Costume Design,,4
+485,Golden Globe,2009,Directing,,87
+486,Golden Globe,2009,Documentary (Feature),,1
+487,Golden Globe,2009,Documentary (Short Subject),,1
+488,Golden Globe,2009,Film Editing,,21
+489,Golden Globe,2009,Foreign Language Film,,2
+490,Golden Globe,2009,Makeup,,109
+491,Golden Globe,2009,Music (Scoring),,10
+492,Golden Globe,2009,Music (Song),,10
+493,Golden Globe,2009,Best Picture,,2
+494,Golden Globe,2009,Short Film (Animated),,109
+495,Golden Globe,2009,Short Film (Live Action),,109
+496,Golden Globe,2009,Sound,,30
+497,Golden Globe,2009,Sound Editing,,30
+498,Golden Globe,2009,Visual Effects,,36
+499,Golden Globe,2009,Writing,,19
+500,Golden Globe,2009,Writing,,19
+501,Golden Globe,2009,Honorary Award,,109
+502,Golden Globe,2009,Honorary Award,,109
+503,Golden Globe,2009,Honorary Award,,109
+504,Golden Globe,2009,Irving G. Thalberg Memorial Award,,109
+505,Golden Globe,2009,Scientific and Technical (Scientific and Engineering Award),,109
+506,Golden Globe,2009,Scientific and Technical (Scientific and Engineering Award),,109
+507,Golden Globe,2009,Scientific and Technical (Scientific and Engineering Award),,109
+508,Golden Globe,2009,Scientific and Technical (Scientific and Engineering Award),,109
+509,Golden Globe,2009,Scientific and Technical (Scientific and Engineering Award),,109
+510,Golden Globe,2009,Scientific and Technical (Scientific and Engineering Award),,109
+511,Golden Globe,2009,Scientific and Technical (Scientific and Engineering Award),,109
+512,Golden Globe,2009,Scientific and Technical (Scientific and Engineering Award),,109
+513,Golden Globe,2009,Scientific and Technical (Scientific and Engineering Award),,109
+514,Golden Globe,2009,Scientific and Technical (Scientific and Engineering Award),,109
+515,Golden Globe,2009,Scientific and Technical (Technical Achievement Award),,109
+516,Golden Globe,2009,Scientific and Technical (Technical Achievement Award),,109
+517,Golden Globe,2009,Scientific and Technical (Technical Achievement Award),,109
+518,Golden Globe,2009,Scientific and Technical (Technical Achievement Award),,109
+519,Golden Globe,2009,Scientific and Technical (Technical Achievement Award),,109
+520,Golden Globe,2008,Actor -- Leading Role,,108
+521,Golden Globe,2008,Actor -- Supporting Role,,108
+522,Golden Globe,2008,Actress -- Leading Role,,108
+523,Golden Globe,2008,Actress -- Supporting Role,,108
+524,Golden Globe,2008,Animated Feature Film,,87
+525,Golden Globe,2008,Art Direction,,87
+526,Golden Globe,2008,Cinematography,,65
+527,Golden Globe,2008,Costume Design,,4
+528,Golden Globe,2008,Directing,,87
+529,Golden Globe,2008,Documentary (Feature),,1
+530,Golden Globe,2008,Documentary (Short Subject),,1
+531,Golden Globe,2008,Film Editing,,21
+532,Golden Globe,2008,Foreign Language Film,,2
+533,Golden Globe,2008,Makeup,,109
+534,Golden Globe,2008,Music (Scoring),,10
+535,Golden Globe,2008,Music (Song),,10
+536,Golden Globe,2008,Best Picture,,2
+537,Golden Globe,2008,Short Film (Animated),,109
+538,Golden Globe,2008,Short Film (Live Action),,109
+539,Golden Globe,2008,Sound,,30
+540,Golden Globe,2008,Sound Editing,,30
+541,Golden Globe,2008,Visual Effects,,36
+542,Golden Globe,2008,Writing,,19
+543,Golden Globe,2008,Writing,,19
+544,Golden Globe,2008,Jean Hersholt Humanitarian Award,,109
+545,Golden Globe,2008,Scientific and Technical (Scientific and Engineering Award),,109
+546,Golden Globe,2008,Scientific and Technical (Scientific and Engineering Award),,109
+547,Golden Globe,2008,Scientific and Technical (Scientific and Engineering Award),,109
+548,Golden Globe,2008,Scientific and Technical (Technical Achievement Award),,109
+549,Golden Globe,2008,Scientific and Technical (Gordon E. Sawyer Award),,109
+550,Golden Globe,2008,Scientific and Technical (Bonner Medal),,109
+551,Golden Globe,2007,Actor -- Leading Role,,108
+552,Golden Globe,2007,Actor -- Supporting Role,,108
+553,Golden Globe,2007,Actress -- Leading Role,,108
+554,Golden Globe,2007,Actress -- Supporting Role,,108
+555,Golden Globe,2007,Animated Feature Film,,87
+556,Golden Globe,2007,Art Direction,,87
+557,Golden Globe,2007,Cinematography,,65
+558,Golden Globe,2007,Costume Design,,4
+559,Golden Globe,2007,Directing,,87
+560,Golden Globe,2007,Documentary (Feature),,1
+561,Golden Globe,2007,Documentary (Short Subject),,1
+562,Golden Globe,2007,Film Editing,,21
+563,Golden Globe,2007,Foreign Language Film,,2
+564,Golden Globe,2007,Makeup,,109
+565,Golden Globe,2007,Music (Scoring),,10
+566,Golden Globe,2007,Music (Song),,10
+567,Golden Globe,2007,Best Picture,,2
+568,Golden Globe,2007,Short Film (Animated),,109
+569,Golden Globe,2007,Short Film (Live Action),,109
+570,Golden Globe,2007,Sound,,30
+571,Golden Globe,2007,Sound Editing,,30
+572,Golden Globe,2007,Visual Effects,,36
+573,Golden Globe,2007,Writing,,19
+574,Golden Globe,2007,Writing,,19
+575,Golden Globe,2007,Honorary Award,,109
+576,Golden Globe,2007,Scientific and Technical (Academy Award of Merit),,109
+577,Golden Globe,2007,Scientific and Technical (Scientific and Engineering Award),,109
+578,Golden Globe,2007,Scientific and Technical (Scientific and Engineering Award),,109
+579,Golden Globe,2007,Scientific and Technical (Technical Achievement Award),,109
+580,Golden Globe,2007,Scientific and Technical (Technical Achievement Award),,109
+581,Golden Globe,2007,Scientific and Technical (Technical Achievement Award),,109
+582,Golden Globe,2007,Scientific and Technical (Technical Achievement Award),,109
+583,Golden Globe,2007,Scientific and Technical (Technical Achievement Award),,109
+584,Golden Globe,2007,Scientific and Technical (Gordon E. Sawyer Award),,109
+585,Golden Globe,2007,Scientific and Technical (Bonner Medal),,109
+586,Golden Globe,2007,Scientific and Technical (Special Awards),,109
+587,Golden Globe,2006,Actor -- Leading Role,,108
+588,Golden Globe,2006,Actor -- Supporting Role,,108
+589,Golden Globe,2006,Actress -- Leading Role,,108
+590,Golden Globe,2006,Actress -- Supporting Role,,108
+591,Golden Globe,2006,Animated Feature Film,,87
+592,Golden Globe,2006,Art Direction,,87
+593,Golden Globe,2006,Cinematography,,65
+594,Golden Globe,2006,Costume Design,,4
+595,Golden Globe,2006,Directing,,87
+596,Golden Globe,2006,Documentary (Feature),,1
+597,Golden Globe,2006,Documentary (Short Subject),,1
+598,Golden Globe,2006,Film Editing,,21
+599,Golden Globe,2006,Foreign Language Film,,2
+600,Golden Globe,2006,Makeup,,109
+601,Golden Globe,2006,Music (Scoring),,10
+602,Golden Globe,2006,Music (Song),,10
+603,Golden Globe,2006,Best Picture,,2
+604,Golden Globe,2006,Short Film (Animated),,109
+605,Golden Globe,2006,Short Film (Live Action),,109
+606,Golden Globe,2006,Sound,,30
+607,Golden Globe,2006,Sound Editing,,30
+608,Golden Globe,2006,Visual Effects,,36
+609,Golden Globe,2006,Writing,,19
+610,Golden Globe,2006,Writing,,19
+611,Golden Globe,2006,Honorary Award,,109
+612,Golden Globe,2006,Jean Hersholt Humanitarian Award,,109
+613,Golden Globe,2006,Scientific and Technical (Scientific and Engineering Award),,109
+614,Golden Globe,2006,Scientific and Technical (Scientific and Engineering Award),,109
+615,Golden Globe,2006,Scientific and Technical (Scientific and Engineering Award),,109
+616,Golden Globe,2006,Scientific and Technical (Scientific and Engineering Award),,109
+617,Golden Globe,2006,Scientific and Technical (Technical Achievement Award),,109
+618,Golden Globe,2006,Scientific and Technical (Technical Achievement Award),,109
+619,Golden Globe,2006,Scientific and Technical (Technical Achievement Award),,109
+620,Golden Globe,2006,Scientific and Technical (Technical Achievement Award),,109
+621,Golden Globe,2006,Scientific and Technical (Technical Achievement Award),,109
+622,Golden Globe,2006,Scientific and Technical (Technical Achievement Award),,109
+623,Golden Globe,2006,Scientific and Technical (Technical Achievement Award),,109
+624,Golden Globe,2006,Scientific and Technical (Technical Achievement Award),,109
+625,Golden Globe,2006,Scientific and Technical (Gordon E. Sawyer Award),,109
+626,Golden Globe,2006,Scientific and Technical (Bonner Medal),,109
+627,Golden Globe,2006,Scientific and Technical (Special Awards),,109
+628,Golden Globe,2005,Actor -- Leading Role,,108
+629,Golden Globe,2005,Actor -- Supporting Role,,108
+630,Golden Globe,2005,Actress -- Leading Role,,108
+631,Golden Globe,2005,Actress -- Supporting Role,,108
+632,Golden Globe,2005,Animated Feature Film,,87
+633,Golden Globe,2005,Art Direction,,87
+634,Golden Globe,2005,Cinematography,,65
+635,Golden Globe,2005,Costume Design,,4
+636,Golden Globe,2005,Directing,,87
+637,Golden Globe,2005,Documentary (Feature),,1
+638,Golden Globe,2005,Documentary (Short Subject),,1
+639,Golden Globe,2005,Film Editing,,21
+640,Golden Globe,2005,Foreign Language Film,,2
+641,Golden Globe,2005,Makeup,,109
+642,Golden Globe,2005,Music (Scoring),,10
+643,Golden Globe,2005,Music (Song),,10
+644,Golden Globe,2005,Best Picture,,2
+645,Golden Globe,2005,Short Film (Animated),,109
+646,Golden Globe,2005,Short Film (Live Action),,109
+647,Golden Globe,2005,Sound,,30
+648,Golden Globe,2005,Sound Editing,,30
+649,Golden Globe,2005,Visual Effects,,36
+650,Golden Globe,2005,Writing,,19
+651,Golden Globe,2005,Writing,,19
+652,Golden Globe,2005,Honorary Award,,109
+653,Golden Globe,2005,Scientific and Technical (Scientific and Engineering Award),,109
+654,Golden Globe,2005,Scientific and Technical (Scientific and Engineering Award),,109
+655,Golden Globe,2005,Scientific and Technical (Scientific and Engineering Award),,109
+656,Golden Globe,2005,Scientific and Technical (Scientific and Engineering Award),,109
+657,Golden Globe,2005,Scientific and Technical (Scientific and Engineering Award),,109
+658,Golden Globe,2005,Scientific and Technical (Technical Achievement Award),,109
+659,Golden Globe,2005,Scientific and Technical (Technical Achievement Award),,109
+660,Golden Globe,2005,Scientific and Technical (Technical Achievement Award),,109
+661,Golden Globe,2005,Scientific and Technical (Technical Achievement Award),,109
+662,Golden Globe,2005,Scientific and Technical (Technical Achievement Award),,109
+663,Golden Globe,2005,Scientific and Technical (Technical Achievement Award),,109
+664,Golden Globe,2005,Scientific and Technical (Technical Achievement Award),,109
+665,Golden Globe,2005,Scientific and Technical (Technical Achievement Award),,109
+666,Golden Globe,2005,Scientific and Technical (Technical Achievement Award),,109
+667,Golden Globe,2005,Scientific and Technical (Technical Achievement Award),,109
+668,Golden Globe,2005,Scientific and Technical (Gordon E. Sawyer Award),,109
+669,Golden Globe,2005,Scientific and Technical (Bonner Medal),,109
+670,Golden Globe,2004,Actor -- Leading Role,,108
+671,Golden Globe,2004,Actor -- Supporting Role,,108
+672,Golden Globe,2004,Actress -- Leading Role,,108
+673,Golden Globe,2004,Actress -- Supporting Role,,108
+674,Golden Globe,2004,Animated Feature Film,,87
+675,Golden Globe,2004,Art Direction,,87
+676,Golden Globe,2004,Cinematography,,65
+677,Golden Globe,2004,Costume Design,,4
+678,Golden Globe,2004,Directing,,87
+679,Golden Globe,2004,Documentary (Feature),,1
+680,Golden Globe,2004,Documentary (Short Subject),,1
+681,Golden Globe,2004,Film Editing,,21
+682,Golden Globe,2004,Foreign Language Film,,2
+683,Golden Globe,2004,Makeup,,109
+684,Golden Globe,2004,Music (Scoring),,10
+685,Golden Globe,2004,Music (Song),,10
+686,Golden Globe,2004,Best Picture,,2
+687,Golden Globe,2004,Short Film (Animated),,109
+688,Golden Globe,2004,Short Film (Live Action),,109
+689,Golden Globe,2004,Sound,,30
+690,Golden Globe,2004,Sound Editing,,30
+691,Golden Globe,2004,Visual Effects,,36
+692,Golden Globe,2004,Writing,,19
+693,Golden Globe,2004,Writing,,19
+694,Golden Globe,2004,Honorary Award,,109
+695,Golden Globe,2004,Jean Hersholt Humanitarian Award,,109
+696,Golden Globe,2004,Scientific and Technical (Academy Award of Merit),,109
+697,Golden Globe,2004,Scientific and Technical (Academy Award of Merit),,109
+698,Golden Globe,2004,Scientific and Technical (Scientific and Engineering Award),,109
+699,Golden Globe,2004,Scientific and Technical (Scientific and Engineering Award),,109
+700,Golden Globe,2004,Scientific and Technical (Technical Achievement Award),,109
+701,Golden Globe,2004,Scientific and Technical (Technical Achievement Award),,109
+702,Golden Globe,2004,Scientific and Technical (Technical Achievement Award),,109
+703,Golden Globe,2004,Scientific and Technical (Technical Achievement Award),,109
+704,Golden Globe,2004,Scientific and Technical (Technical Achievement Award),,109
+705,Golden Globe,2004,Scientific and Technical (Technical Achievement Award),,109
+706,Golden Globe,2004,Scientific and Technical (Technical Achievement Award),,109
+707,Golden Globe,2004,Scientific and Technical (Technical Achievement Award),,109
+708,Golden Globe,2004,Scientific and Technical (Gordon E. Sawyer Award),,109
+709,Golden Globe,2004,Scientific and Technical (Special Awards),,109
+710,Golden Globe,2003,Actor -- Leading Role,,108
+711,Golden Globe,2003,Actor -- Supporting Role,,108
+712,Golden Globe,2003,Actress -- Leading Role,,108
+713,Golden Globe,2003,Actress -- Supporting Role,,108
+714,Golden Globe,2003,Animated Feature Film,,87
+715,Golden Globe,2003,Art Direction,,87
+716,Golden Globe,2003,Cinematography,,65
+717,Golden Globe,2003,Costume Design,,4
+718,Golden Globe,2003,Directing,,87
+719,Golden Globe,2003,Documentary (Feature),,1
+720,Golden Globe,2003,Documentary (Short Subject),,1
+721,Golden Globe,2003,Film Editing,,21
+722,Golden Globe,2003,Foreign Language Film,,2
+723,Golden Globe,2003,Makeup,,109
+724,Golden Globe,2003,Music (Scoring),,10
+725,Golden Globe,2003,Music (Song),,10
+726,Golden Globe,2003,Best Picture,,2
+727,Golden Globe,2003,Short Film (Animated),,109
+728,Golden Globe,2003,Short Film (Live Action),,109
+729,Golden Globe,2003,Sound,,30
+730,Golden Globe,2003,Sound Editing,,30
+731,Golden Globe,2003,Visual Effects,,36
+732,Golden Globe,2003,Writing,,19
+733,Golden Globe,2003,Writing,,19
+734,Golden Globe,2003,Honorary Award,,109
+735,Golden Globe,2003,Scientific and Technical (Academy Award of Merit),,109
+736,Golden Globe,2003,Scientific and Technical (Academy Award of Merit),,109
+737,Golden Globe,2003,Scientific and Technical (Scientific and Engineering Award),,109
+738,Golden Globe,2003,Scientific and Technical (Scientific and Engineering Award),,109
+739,Golden Globe,2003,Scientific and Technical (Scientific and Engineering Award),,109
+740,Golden Globe,2003,Scientific and Technical (Technical Achievement Award),,109
+741,Golden Globe,2003,Scientific and Technical (Technical Achievement Award),,109
+742,Golden Globe,2003,Scientific and Technical (Technical Achievement Award),,109
+743,Golden Globe,2003,Scientific and Technical (Gordon E. Sawyer Award),,109
+744,Golden Globe,2003,Scientific and Technical (Bonner Medal),,109
+745,Golden Globe,2002,Actor -- Leading Role,,108
+746,Golden Globe,2002,Actor -- Supporting Role,,108
+747,Golden Globe,2002,Actress -- Leading Role,,108
+748,Golden Globe,2002,Actress -- Supporting Role,,108
+749,Golden Globe,2002,Animated Feature Film,,87
+750,Golden Globe,2002,Art Direction,,87
+751,Golden Globe,2002,Cinematography,,65
+752,Golden Globe,2002,Costume Design,,4
+753,Golden Globe,2002,Directing,,87
+754,Golden Globe,2002,Documentary (Feature),,1
+755,Golden Globe,2002,Documentary (Short Subject),,1
+756,Golden Globe,2002,Film Editing,,21
+757,Golden Globe,2002,Foreign Language Film,,2
+758,Golden Globe,2002,Makeup,,109
+759,Golden Globe,2002,Music (Scoring),,10
+760,Golden Globe,2002,Music (Song),,10
+761,Golden Globe,2002,Best Picture,,2
+762,Golden Globe,2002,Short Film (Animated),,109
+763,Golden Globe,2002,Short Film (Live Action),,109
+764,Golden Globe,2002,Sound,,30
+765,Golden Globe,2002,Sound Editing,,30
+766,Golden Globe,2002,Visual Effects,,36
+767,Golden Globe,2002,Writing,,19
+768,Golden Globe,2002,Writing,,19
+769,Golden Globe,2002,Honorary Award,,109
+770,Golden Globe,2002,Scientific and Technical (Academy Award of Merit),,109
+771,Golden Globe,2002,Scientific and Technical (Academy Award of Merit),,109
+772,Golden Globe,2002,Scientific and Technical (Scientific and Engineering Award),,109
+773,Golden Globe,2002,Scientific and Technical (Scientific and Engineering Award),,109
+774,Golden Globe,2002,Scientific and Technical (Scientific and Engineering Award),,109
+775,Golden Globe,2002,Scientific and Technical (Scientific and Engineering Award),,109
+776,Golden Globe,2002,Scientific and Technical (Technical Achievement Award),,109
+777,Golden Globe,2002,Scientific and Technical (Technical Achievement Award),,109
+778,Golden Globe,2002,Scientific and Technical (Technical Achievement Award),,109
+779,Golden Globe,2002,Scientific and Technical (Technical Achievement Award),,109
+780,Golden Globe,2002,Scientific and Technical (Technical Achievement Award),,109
+781,Golden Globe,2002,Scientific and Technical (Technical Achievement Award),,109
+782,Golden Globe,2002,Scientific and Technical (Bonner Medal),,109
+783,Golden Globe,2002,Scientific and Technical (Bonner Medal),,109
+784,Golden Globe,2001,Actor -- Leading Role,,108
+785,Golden Globe,2001,Actor -- Supporting Role,,108
+786,Golden Globe,2001,Actress -- Leading Role,,108
+787,Golden Globe,2001,Actress -- Supporting Role,,108
+788,Golden Globe,2001,Animated Feature Film,,87
+789,Golden Globe,2001,Art Direction,,87
+790,Golden Globe,2001,Cinematography,,65
+791,Golden Globe,2001,Costume Design,,4
+792,Golden Globe,2001,Directing,,87
+793,Golden Globe,2001,Documentary (Feature),,1
+794,Golden Globe,2001,Documentary (Short Subject),,1
+795,Golden Globe,2001,Film Editing,,21
+796,Golden Globe,2001,Foreign Language Film,,2
+797,Golden Globe,2001,Makeup,,109
+798,Golden Globe,2001,Music (Scoring),,10
+799,Golden Globe,2001,Music (Song),,10
+800,Golden Globe,2001,Best Picture,,2
+801,Golden Globe,2001,Short Film (Animated),,109
+802,Golden Globe,2001,Short Film (Live Action),,109
+803,Golden Globe,2001,Sound,,30
+804,Golden Globe,2001,Sound Editing,,30
+805,Golden Globe,2001,Visual Effects,,36
+806,Golden Globe,2001,Writing,,19
+807,Golden Globe,2001,Writing,,19
+808,Golden Globe,2001,Honorary Award,,109
+809,Golden Globe,2001,Honorary Award,,109
+810,Golden Globe,2001,Jean Hersholt Humanitarian Award,,109
+811,Golden Globe,2001,Scientific and Technical (Scientific and Engineering Award),,109
+812,Golden Globe,2001,Scientific and Technical (Scientific and Engineering Award),,109
+813,Golden Globe,2001,Scientific and Technical (Scientific and Engineering Award),,109
+814,Golden Globe,2001,Scientific and Technical (Scientific and Engineering Award),,109
+815,Golden Globe,2001,Scientific and Technical (Scientific and Engineering Award),,109
+816,Golden Globe,2001,Scientific and Technical (Scientific and Engineering Award),,109
+817,Golden Globe,2001,Scientific and Technical (Technical Achievement Award),,109
+818,Golden Globe,2001,Scientific and Technical (Technical Achievement Award),,109
+819,Golden Globe,2001,Scientific and Technical (Technical Achievement Award),,109
+820,Golden Globe,2001,Scientific and Technical (Technical Achievement Award),,109
+821,Golden Globe,2001,Scientific and Technical (Technical Achievement Award),,109
+822,Golden Globe,2001,Scientific and Technical (Technical Achievement Award),,109
+823,Golden Globe,2001,Scientific and Technical (Technical Achievement Award),,109
+824,Golden Globe,2001,Scientific and Technical (Technical Achievement Award),,109
+825,Golden Globe,2001,Scientific and Technical (Technical Achievement Award),,109
+826,Golden Globe,2001,Scientific and Technical (Technical Achievement Award),,109
+827,Golden Globe,2001,Scientific and Technical (Technical Achievement Award),,109
+828,Golden Globe,2001,Scientific and Technical (Gordon E. Sawyer Award),,109
+829,Golden Globe,2001,Scientific and Technical (Bonner Medal),,109
+830,Golden Globe,2001,Scientific and Technical (Special Awards),,109
+831,Golden Globe,2000,Actor -- Leading Role,,108
+832,Golden Globe,2000,Actor -- Supporting Role,,108
+833,Golden Globe,2000,Actress -- Leading Role,,108
+834,Golden Globe,2000,Actress -- Supporting Role,,108
+835,Golden Globe,2000,Art Direction,,87
+836,Golden Globe,2000,Cinematography,,65
+837,Golden Globe,2000,Costume Design,,109
+838,Golden Globe,2000,Directing,,87
+839,Golden Globe,2000,Documentary (Feature),,1
+840,Golden Globe,2000,Documentary (Short Subject),,1
+841,Golden Globe,2000,Film Editing,,21
+842,Golden Globe,2000,Foreign Language Film,,109
+843,Golden Globe,2000,Makeup,,109
+844,Golden Globe,2000,Music (Scoring),,10
+845,Golden Globe,2000,Music (Song),,10
+846,Golden Globe,2000,Best Picture,,109
+847,Golden Globe,2000,Short Film (Animated),,109
+848,Golden Globe,2000,Short Film (Live Action),,109
+849,Golden Globe,2000,Sound,,30
+850,Golden Globe,2000,Sound Editing,,30
+851,Golden Globe,2000,Visual Effects,,36
+852,Golden Globe,2000,Writing,,19
+853,Golden Globe,2000,Writing,,19
+854,Golden Globe,2000,Honorary Award,,109
+855,Golden Globe,2000,Honorary Award,,109
+856,Golden Globe,2000,Irving G. Thalberg Memorial Award,,109
+857,Golden Globe,2000,Scientific and Technical (Academy Award of Merit),,109
+858,Golden Globe,2000,Scientific and Technical (Scientific and Engineering Award),,109
+859,Golden Globe,2000,Scientific and Technical (Scientific and Engineering Award),,109
+860,Golden Globe,2000,Scientific and Technical (Scientific and Engineering Award),,109
+861,Golden Globe,2000,Scientific and Technical (Scientific and Engineering Award),,109
+862,Golden Globe,2000,Scientific and Technical (Scientific and Engineering Award),,109
+863,Golden Globe,2000,Scientific and Technical (Scientific and Engineering Award),,109
+864,Golden Globe,2000,Scientific and Technical (Scientific and Engineering Award),,109
+865,Golden Globe,2000,Scientific and Technical (Technical Achievement Award),,109
+866,Golden Globe,2000,Scientific and Technical (Technical Achievement Award),,109
+867,Golden Globe,2000,Scientific and Technical (Technical Achievement Award),,109
+868,Golden Globe,2000,Scientific and Technical (Technical Achievement Award),,109
+869,Golden Globe,2000,Scientific and Technical (Technical Achievement Award),,109
+870,Golden Globe,2000,Scientific and Technical (Technical Achievement Award),,109
+871,Golden Globe,2000,Scientific and Technical (Technical Achievement Award),,109
+872,Golden Globe,2000,Scientific and Technical (Technical Achievement Award),,109
+873,Golden Globe,2000,Scientific and Technical (Technical Achievement Award),,109
+874,Golden Globe,2000,Scientific and Technical (Gordon E. Sawyer Award),,109
+875,Golden Globe,2000,Scientific and Technical (Bonner Medal),,109
+876,Golden Globe,2000,Scientific and Technical (Special Awards),,109
